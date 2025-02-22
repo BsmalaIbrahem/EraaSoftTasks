@@ -1,0 +1,14 @@
+D:\C#\ErraSoft\Tasks\Task1\MainTask\bin\Debug\net8.0\MainTask.exe
+D:\C#\ErraSoft\Tasks\Task1\MainTask\bin\Debug\net8.0\MainTask.deps.json
+D:\C#\ErraSoft\Tasks\Task1\MainTask\bin\Debug\net8.0\MainTask.runtimeconfig.json
+D:\C#\ErraSoft\Tasks\Task1\MainTask\bin\Debug\net8.0\MainTask.dll
+D:\C#\ErraSoft\Tasks\Task1\MainTask\bin\Debug\net8.0\MainTask.pdb
+D:\C#\ErraSoft\Tasks\Task1\MainTask\obj\Debug\net8.0\MainTask.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\ErraSoft\Tasks\Task1\MainTask\obj\Debug\net8.0\MainTask.AssemblyInfoInputs.cache
+D:\C#\ErraSoft\Tasks\Task1\MainTask\obj\Debug\net8.0\MainTask.AssemblyInfo.cs
+D:\C#\ErraSoft\Tasks\Task1\MainTask\obj\Debug\net8.0\MainTask.csproj.CoreCompileInputs.cache
+D:\C#\ErraSoft\Tasks\Task1\MainTask\obj\Debug\net8.0\MainTask.dll
+D:\C#\ErraSoft\Tasks\Task1\MainTask\obj\Debug\net8.0\refint\MainTask.dll
+D:\C#\ErraSoft\Tasks\Task1\MainTask\obj\Debug\net8.0\MainTask.pdb
+D:\C#\ErraSoft\Tasks\Task1\MainTask\obj\Debug\net8.0\MainTask.genruntimeconfig.cache
+D:\C#\ErraSoft\Tasks\Task1\MainTask\obj\Debug\net8.0\ref\MainTask.dll
