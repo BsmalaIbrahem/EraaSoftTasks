@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#\\ErraSoft\\Tasks\\Task1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A5581CB1-B6D1-49AD-AA71-9174DE52A1E3}|MainTask\\MainTask.csproj|d:\\c#\\errasoft\\tasks\\task1\\maintask\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5581CB1-B6D1-49AD-AA71-9174DE52A1E3}|MainTask\\MainTask.csproj|solutionrelative:maintask\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{496A68CC-F3D5-4220-A8EB-F4B59634AF42}|SubTask\\SubTask.csproj|d:\\c#\\errasoft\\tasks\\task1\\subtask\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{496A68CC-F3D5-4220-A8EB-F4B59634AF42}|SubTask\\SubTask.csproj|solutionrelative:subtask\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Task1\\SubTask\\Program.cs",
+              "RelativeDocumentMoniker": "SubTask\\Program.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Task1\\SubTask\\Program.cs",
+              "RelativeToolTip": "SubTask\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T17:06:07.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Task1\\MainTask\\Program.cs",
+              "RelativeDocumentMoniker": "MainTask\\Program.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Task1\\MainTask\\Program.cs",
+              "RelativeToolTip": "MainTask\\Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAgwAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T16:00:49.961Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
