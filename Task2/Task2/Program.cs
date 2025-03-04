@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 
 namespace Task2
 {
@@ -10,6 +11,7 @@ namespace Task2
             string choiceSlug = "\0";
             do
             {
+                Console.WriteLine("\n ====================================");
                 Console.WriteLine("P - Print numbers");
                 Console.WriteLine("A - Add a number");
                 Console.WriteLine("M - Display mean of the numbers");
@@ -18,7 +20,10 @@ namespace Task2
                 Console.WriteLine("F - Find a number");
                 Console.WriteLine("C - Clear the list");
                 Console.WriteLine("W - Swap");
+                Console.WriteLine("SA - Sort the list ASC");
+                Console.WriteLine("SD - Sort the list DESC");
                 Console.WriteLine("Q - Quit\n");
+                Console.WriteLine("\n ====================================");
                 Console.WriteLine("Enter your choice: ");
                 choiceSlug = (Console.ReadLine()).ToUpper();
 
@@ -27,13 +32,16 @@ namespace Task2
                     case "P": 
                         if(GetListCount(numbers) > 0)
                         {
-                            string listNums = "[ ";
+                          
+                            StringBuilder listNums = new StringBuilder();
+                            listNums.Append("[ ");
                             for(int i=0; i< numbers.Count(); i++)
                             {
-                                listNums += Convert.ToString(numbers[i]);
-                                listNums += " ";
+                                listNums.Append(numbers[i]);
+                                listNums.Append(" ");
+                               
                             }
-                            listNums += "]";
+                            listNums.Append("]");
                             Console.WriteLine(listNums);
                         }
                         else
@@ -158,6 +166,56 @@ namespace Task2
                             Console.WriteLine("List is Empty");
                         }
                         break;
+                    case "SA":
+                        if(GetListCount(numbers) > 0){
+                            for (int i = 0; i < numbers.Count - 1; i++)
+                            {
+                                for (int j = i + 1; j < numbers.Count; j++)
+                                {
+                                    int swap = 0;
+                                    if (numbers[i] > numbers[j])
+                                    {
+                                        swap = numbers[i];
+                                        numbers[i] = numbers[j];
+                                        numbers[j] = swap;
+                                    }
+                                }
+                            }
+                            Console.WriteLine("Sorted");
+                        }
+                        else
+                        {
+                            Console.WriteLine("List is Empty");
+                        }
+
+                        break;
+                    case "SD":
+                        if (GetListCount(numbers) > 0)
+                        {
+                            bool swap = false;
+                            for(int i=0; i< numbers.Count; i++)
+                            {
+                                for(int j=1; j< numbers.Count -i; j++)
+                                {
+                                    int temp = 0;
+                                    if (numbers[j] > numbers[j-1])
+                                    {
+                                        temp = numbers[j - 1];
+                                        numbers[j-1] = numbers[j];
+                                        numbers[j] = temp;
+                                        swap = true;
+                                    }
+                                }
+
+                                if (!swap)
+                                    break;
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("List is Empty");
+                        }
+                        break;
                     case "Q":
                         break;
                     default:
@@ -223,7 +281,7 @@ namespace Task2
             return largestNumber;
         }
 
-
+        
 
     }
 }
