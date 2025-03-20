@@ -1,4 +1,6 @@
-﻿namespace Task4
+﻿using System.Text;
+
+namespace Task4
 {
     public class Book
     {
@@ -26,26 +28,25 @@
         }
 
         public List<Book> SearchForBook(string search)
-        {
-            List<Book> searchList = new List<Book>(); 
-            for (int i = 0; i < books.Count; i++) 
-            {
-                if(books[i].Title.Contains(search) || books[i].Author.Contains(search))
-                {
-                    searchList.Add(books[i]);
-                }
-            }
-
-            return searchList;
+        {  
+            return Search(search);
         }
 
         public string BorrowBook(string bookTitle)
         {
-            int bookIndex = SearchByTitle(bookTitle);
-            if (bookIndex >= 0)
+            List<Book> books = Search(bookTitle);
+            if (books.Count > 0)
             {
-                books[bookIndex].Availability = false;
-                return "Borrowed";
+                for (int i = 0; i < books.Count; i++) 
+                {
+                    if (books[i].Availability)
+                    {
+                        books[i].Availability = false;
+                        return "Borrowed";
+
+                    }
+                }
+                return "Sorry, All Books are Borrowed";
             }
             return "Not Found";
 
@@ -53,32 +54,143 @@
 
         public string ReturnBook(string bookTitle)
         {
-            int bookIndex = SearchByTitle(bookTitle);
-            if (bookIndex >= 0)
+            List<Book> books = Search(bookTitle);
+            if (books.Count > 0)
             {
-                if (!books[bookIndex].Availability)
+                for (int i = 0; i < books.Count; i++)
                 {
-                    books[bookIndex].Availability = true;
-                    return "Returned";
+                    if (!books[i].Availability)
+                    {
+                        books[i].Availability = true;
+                        return "Returned";
+
+                    }
                 }
-                return "This book has not been borrowed.";
-                
+                return "Sorry, All Books are Returned";
             }
             return "Not Found";
 
         }
 
-        private int SearchByTitle(string search)
+        private List<Book> Search(string search)
         {
+            int seachLen = search.Length;
+            List<Book> searchedbooks = new List<Book>();
             for (int i = 0; i < books.Count; i++)
             {
-                if (books[i].Title.Contains(search) )
+                bool flag = false;
+
+                if (books[i].Title.Length == seachLen)
                 {
-                    return i;
+                    if (books[i].Title == search)
+                    {
+                        searchedbooks.Add(books[i]);
+                        flag = true;
+                    }
+                }
+                else if (books[i].Title.Length < seachLen)
+                {
+                    break;
+                }
+                else
+                {
+                    StringBuilder title = new StringBuilder(books[i].Title);
+
+                    for (int j = 0; j < books[i].Title.Length; j++)
+                    {
+                        string s = "";
+                        if (title.Length >= seachLen)
+                        {
+                            for (int k = 0; k < seachLen; k++)
+                            {
+                                s += title[k];
+                            }
+
+                            if (s == search)
+                            {
+                                searchedbooks.Add(books[i]);
+                                flag = true;
+                                break;
+                            }
+                            else
+                            {
+
+                                title.Remove(0, 1);
+                            }
+
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }
+                }
+
+                if(!flag)
+                {
+                    SearchByAuthor(search, searchedbooks, i);
+                }
+
+            }
+
+            return searchedbooks;
+        }
+
+        private List<Book> SearchByAuthor(string search, List<Book>  searchedbooks, int i)
+        {
+            int seachLen = search.Length;
+           
+
+
+
+            if (books[i].Author.Length == seachLen)
+            {
+                if (books[i].Author == search)
+                    searchedbooks.Add(books[i]);
+            }
+            else if (books[i].Author.Length < seachLen)
+            {
+                return [];
+            }
+            else
+            {
+                StringBuilder author = new StringBuilder(books[i].Author);
+
+                for (int j = 0; j < books[i].Author.Length; j++)
+                {
+                    string s = "";
+                    if (author.Length >= seachLen)
+                    {
+                        for (int k = 0; k < seachLen; k++)
+                        {
+                            s += author[k];
+                        }
+
+                        if (s == search)
+                        {
+                            searchedbooks.Add(books[i]);
+                            break;
+                        }
+                        else
+                        {
+
+                            author.Remove(0, 1);
+                        }
+
+                    }
+                    else
+                    {
+                        break;
+                    }
                 }
             }
-            return -1;
+
+            
+
+            return searchedbooks;
         }
+
+
     }
     internal class Program
     {
@@ -89,7 +201,7 @@
             library.AddBook(new Book("To Kill a Mockingbird", "Harper Lee", "9780061120084"));
             library.AddBook(new Book("1984", "George Orwell", "9780451524935"));
 
-            var searchBooks = library.SearchForBook("The Great Gatsby");
+            var searchBooks = library.SearchForBook("G");
             if(searchBooks.Count > 0)
             {
                 for (int i = 0; i < searchBooks.Count; i++)
@@ -103,8 +215,10 @@
             }
 
             Console.WriteLine(library.BorrowBook("Gatsby"));
+            Console.WriteLine(library.BorrowBook("Gatsby"));
 
             Console.WriteLine(library.ReturnBook("Gatsby"));
+            Console.WriteLine(library.ReturnBook("nfkhb"));
         }
     }
 }
