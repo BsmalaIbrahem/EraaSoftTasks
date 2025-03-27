@@ -40,5 +40,10 @@ namespace Task5
                 return false;
             }
         }
+        
+        public static Account operator+(Account left, Account right)
+        {
+            return new Account(balance:left.Balance+right.Balance);
+        }
     }
 }

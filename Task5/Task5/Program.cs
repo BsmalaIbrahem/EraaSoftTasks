@@ -14,6 +14,8 @@ namespace Task5
             accounts.Add(new Account("Larry"));
             accounts.Add(new Account("Moe", 2000));
             accounts.Add(new Account("Curly", 5000));
+            Account TwoAccounts = accounts[2] + accounts[3];
+            Console.WriteLine(TwoAccounts.Balance);
 
             AccountUtil.Deposit(accounts, 1000);
             AccountUtil.Withdraw(accounts, 2000);
