@@ -45,8 +45,15 @@ namespace Task5
 
             if(WithdrawalsPerYear.ContainsKey(currentYear))
             {
-                if (WithdrawalsPerYear[currentYear] >= 3)
-                    return false;
+                for (int i = 0; i < WithdrawalsPerYear.Count; i++)
+                {
+                    var item = WithdrawalsPerYear.ElementAt(i);
+                    if (WithdrawalsPerYear.ContainsKey(currentYear) && item.Value >= 3)
+                    {
+                        return false;
+
+                    }
+                }
             }
             return true;
         }
