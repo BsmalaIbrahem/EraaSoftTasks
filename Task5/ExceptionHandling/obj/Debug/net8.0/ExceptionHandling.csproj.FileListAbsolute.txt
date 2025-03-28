@@ -1,0 +1,15 @@
+D:\C#\ErraSoft\Tasks\Task5\ExceptionHandling\bin\Debug\net8.0\ExceptionHandling.exe
+D:\C#\ErraSoft\Tasks\Task5\ExceptionHandling\bin\Debug\net8.0\ExceptionHandling.deps.json
+D:\C#\ErraSoft\Tasks\Task5\ExceptionHandling\bin\Debug\net8.0\ExceptionHandling.runtimeconfig.json
+D:\C#\ErraSoft\Tasks\Task5\ExceptionHandling\bin\Debug\net8.0\ExceptionHandling.dll
+D:\C#\ErraSoft\Tasks\Task5\ExceptionHandling\bin\Debug\net8.0\ExceptionHandling.pdb
+D:\C#\ErraSoft\Tasks\Task5\ExceptionHandling\obj\Debug\net8.0\ExceptionHandling.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\ErraSoft\Tasks\Task5\ExceptionHandling\obj\Debug\net8.0\ExceptionHandling.AssemblyInfoInputs.cache
+D:\C#\ErraSoft\Tasks\Task5\ExceptionHandling\obj\Debug\net8.0\ExceptionHandling.AssemblyInfo.cs
+D:\C#\ErraSoft\Tasks\Task5\ExceptionHandling\obj\Debug\net8.0\ExceptionHandling.csproj.CoreCompileInputs.cache
+D:\C#\ErraSoft\Tasks\Task5\ExceptionHandling\obj\Debug\net8.0\ExceptionHandling.sourcelink.json
+D:\C#\ErraSoft\Tasks\Task5\ExceptionHandling\obj\Debug\net8.0\ExceptionHandling.dll
+D:\C#\ErraSoft\Tasks\Task5\ExceptionHandling\obj\Debug\net8.0\refint\ExceptionHandling.dll
+D:\C#\ErraSoft\Tasks\Task5\ExceptionHandling\obj\Debug\net8.0\ExceptionHandling.pdb
+D:\C#\ErraSoft\Tasks\Task5\ExceptionHandling\obj\Debug\net8.0\ExceptionHandling.genruntimeconfig.cache
+D:\C#\ErraSoft\Tasks\Task5\ExceptionHandling\obj\Debug\net8.0\ref\ExceptionHandling.dll

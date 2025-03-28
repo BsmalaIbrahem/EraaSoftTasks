@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task5", "Task5\Task5.csproj", "{52FEC40C-FC14-42FC-A717-784AE3CA0CFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{CD89BFE3-052C-41C1-89AB-B816E33F95B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{52FEC40C-FC14-42FC-A717-784AE3CA0CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52FEC40C-FC14-42FC-A717-784AE3CA0CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52FEC40C-FC14-42FC-A717-784AE3CA0CFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD89BFE3-052C-41C1-89AB-B816E33F95B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD89BFE3-052C-41C1-89AB-B816E33F95B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD89BFE3-052C-41C1-89AB-B816E33F95B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD89BFE3-052C-41C1-89AB-B816E33F95B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

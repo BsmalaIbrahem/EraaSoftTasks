@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\C#\\ErraSoft\\Tasks\\Task5\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CD89BFE3-052C-41C1-89AB-B816E33F95B8}|ExceptionHandling\\ExceptionHandling.csproj|d:\\c#\\errasoft\\tasks\\task5\\exceptionhandling\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD89BFE3-052C-41C1-89AB-B816E33F95B8}|ExceptionHandling\\ExceptionHandling.csproj|solutionrelative:exceptionhandling\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{52FEC40C-FC14-42FC-A717-784AE3CA0CFA}|Task5\\Task5.csproj|d:\\c#\\errasoft\\tasks\\task5\\task5\\savingsaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52FEC40C-FC14-42FC-A717-784AE3CA0CFA}|Task5\\Task5.csproj|solutionrelative:task5\\savingsaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Task5\\ExceptionHandling\\Program.cs",
+              "RelativeDocumentMoniker": "ExceptionHandling\\Program.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Task5\\ExceptionHandling\\Program.cs",
+              "RelativeToolTip": "ExceptionHandling\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T18:37:32.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "TrustAccount.cs",
               "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Task5\\Task5\\TrustAccount.cs",
               "RelativeDocumentMoniker": "Task5\\TrustAccount.cs",
@@ -42,12 +59,11 @@
               "RelativeToolTip": "Task5\\TrustAccount.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAADwvx4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T21:56:15.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T21:56:15.618Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CheckingAccount.cs",
               "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Task5\\Task5\\CheckingAccount.cs",
               "RelativeDocumentMoniker": "Task5\\CheckingAccount.cs",
@@ -55,25 +71,24 @@
               "RelativeToolTip": "Task5\\CheckingAccount.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T21:46:24.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T21:46:24.675Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SavingsAccount.cs",
               "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Task5\\Task5\\SavingsAccount.cs",
               "RelativeDocumentMoniker": "Task5\\SavingsAccount.cs",
               "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Task5\\Task5\\SavingsAccount.cs",
               "RelativeToolTip": "Task5\\SavingsAccount.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T21:16:22.647Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Task5\\Task5\\Program.cs",
               "RelativeDocumentMoniker": "Task5\\Program.cs",
@@ -81,12 +96,11 @@
               "RelativeToolTip": "Task5\\Program.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAIwDQAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T21:08:44.374Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T21:08:44.374Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Account.cs",
               "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Task5\\Task5\\Account.cs",
               "RelativeDocumentMoniker": "Task5\\Account.cs",
@@ -94,8 +108,7 @@
               "RelativeToolTip": "Task5\\Account.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAIwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T21:09:52.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T21:09:52.276Z"
             }
           ]
         }
