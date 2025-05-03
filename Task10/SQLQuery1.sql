@@ -230,3 +230,5 @@ update Sales.employees set slary = 46000 where slary < 45000
 delete from Sales.employees where hire_date is null
 
 -- 35-Create an index on the salary column in the "employees" table to optimize queries filtering by salary.
+create index ix_salary
+on Sales.employees(slary)
