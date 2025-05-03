@@ -197,7 +197,7 @@ join deparments dep on em.department_id = dep.department_id
 -- 28-Retrieve employees who don’t belong to any department (Use LEFT JOIN and check for NULL).
 select *
 from Sales.employees em
-left join deparments dep on em.department_id is null
+left join deparments dep on em.department_id = dep.department_id
 where em.department_id is null
 
 -- 29-Show all departments and their employee count (Use JOIN and GROUP BY).
