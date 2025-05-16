@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#\\ErraSoft\\Tasks\\Task12\\LinqProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A790F8AF-58C8-4412-81ED-32EA917DE669}|LinqProject\\LinqProject.csproj|d:\\c#\\errasoft\\tasks\\task12\\linqproject\\linqproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A790F8AF-58C8-4412-81ED-32EA917DE669}|LinqProject\\LinqProject.csproj|solutionrelative:linqproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A790F8AF-58C8-4412-81ED-32EA917DE669}|LinqProject\\LinqProject.csproj|d:\\c#\\errasoft\\tasks\\task12\\linqproject\\linqproject\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A790F8AF-58C8-4412-81ED-32EA917DE669}|LinqProject\\LinqProject.csproj|solutionrelative:linqproject\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A790F8AF-58C8-4412-81ED-32EA917DE669}|LinqProject\\LinqProject.csproj|d:\\c#\\errasoft\\tasks\\task12\\linqproject\\linqproject\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A790F8AF-58C8-4412-81ED-32EA917DE669}|LinqProject\\LinqProject.csproj|solutionrelative:linqproject\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Task12\\LinqProject\\LinqProject\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "LinqProject\\Models\\Product.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Task12\\LinqProject\\LinqProject\\Models\\Product.cs",
+              "RelativeToolTip": "LinqProject\\Models\\Product.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwCwAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T20:14:55.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Task12\\LinqProject\\LinqProject\\Program.cs",
+              "RelativeDocumentMoniker": "LinqProject\\Program.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Task12\\LinqProject\\LinqProject\\Program.cs",
+              "RelativeToolTip": "LinqProject\\Program.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAQwDkAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T02:33:47.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Task12\\LinqProject\\LinqProject\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "LinqProject\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Task12\\LinqProject\\LinqProject\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "LinqProject\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAIwC0AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T02:31:24.359Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
