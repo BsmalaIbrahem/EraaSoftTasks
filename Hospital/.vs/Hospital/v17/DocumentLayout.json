@@ -1,0 +1,241 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D0D7E99F-156E-4177-BF14-40E3AE95579F}|DataLayer\\DataLayer.csproj|d:\\c#\\errasoft\\tasks\\hospital\\datalayer\\migrations\\20250526101910_editinitialdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0D7E99F-156E-4177-BF14-40E3AE95579F}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\migrations\\20250526101910_editinitialdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0D7E99F-156E-4177-BF14-40E3AE95579F}|DataLayer\\DataLayer.csproj|d:\\c#\\errasoft\\tasks\\hospital\\datalayer\\seeders\\initialseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0D7E99F-156E-4177-BF14-40E3AE95579F}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\seeders\\initialseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|d:\\c#\\errasoft\\tasks\\hospital\\presentationlayer\\views\\doctor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\doctor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|d:\\c#\\errasoft\\tasks\\hospital\\presentationlayer\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|d:\\c#\\errasoft\\tasks\\hospital\\presentationlayer\\controllers\\specializationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\specializationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|d:\\c#\\errasoft\\tasks\\hospital\\presentationlayer\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|d:\\c#\\errasoft\\tasks\\hospital\\presentationlayer\\views\\specialization\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\specialization\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0D7E99F-156E-4177-BF14-40E3AE95579F}|DataLayer\\DataLayer.csproj|d:\\c#\\errasoft\\tasks\\hospital\\datalayer\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0D7E99F-156E-4177-BF14-40E3AE95579F}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|d:\\c#\\errasoft\\tasks\\hospital\\presentationlayer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|d:\\c#\\errasoft\\tasks\\hospital\\presentationlayer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0D7E99F-156E-4177-BF14-40E3AE95579F}|DataLayer\\DataLayer.csproj|d:\\c#\\errasoft\\tasks\\hospital\\datalayer\\dataaccess\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0D7E99F-156E-4177-BF14-40E3AE95579F}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\dataaccess\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0D7E99F-156E-4177-BF14-40E3AE95579F}|DataLayer\\DataLayer.csproj|d:\\c#\\errasoft\\tasks\\hospital\\datalayer\\models\\specialization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0D7E99F-156E-4177-BF14-40E3AE95579F}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\specialization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|d:\\c#\\errasoft\\tasks\\hospital\\presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250526101910_editInitialData.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\DataLayer\\Migrations\\20250526101910_editInitialData.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Migrations\\20250526101910_editInitialData.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\DataLayer\\Migrations\\20250526101910_editInitialData.cs",
+              "RelativeToolTip": "DataLayer\\Migrations\\20250526101910_editInitialData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T10:19:12.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InitialSeeder.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\DataLayer\\Seeders\\InitialSeeder.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Seeders\\InitialSeeder.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\DataLayer\\Seeders\\InitialSeeder.cs",
+              "RelativeToolTip": "DataLayer\\Seeders\\InitialSeeder.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAQwCMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T10:15:16.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Views\\Doctor\\Index.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Doctor\\Index.cshtml",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Views\\Doctor\\Index.cshtml",
+              "RelativeToolTip": "PresentationLayer\\Views\\Doctor\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T09:52:23.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\DoctorController.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "PresentationLayer\\Controllers\\DoctorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T09:29:39.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PresentationLayer\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T09:22:38.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Views\\Specialization\\Index.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Specialization\\Index.cshtml",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Views\\Specialization\\Index.cshtml",
+              "RelativeToolTip": "PresentationLayer\\Views\\Specialization\\Index.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAqwCwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T08:56:40.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SpecializationController.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Controllers\\SpecializationController.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\SpecializationController.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Controllers\\SpecializationController.cs",
+              "RelativeToolTip": "PresentationLayer\\Controllers\\SpecializationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T08:45:27.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Program.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Program.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Program.cs",
+              "RelativeToolTip": "PresentationLayer\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T08:33:15.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "PresentationLayer\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T08:26:33.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\DataLayer\\DataAccess\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "DataLayer\\DataAccess\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\DataLayer\\DataAccess\\ApplicationDbContext.cs",
+              "RelativeToolTip": "DataLayer\\DataAccess\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAIwBQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T08:13:57.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "PresentationLayer\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA0wBkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T08:10:33.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\DataLayer\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\Doctor.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\DataLayer\\Models\\Doctor.cs",
+              "RelativeToolTip": "DataLayer\\Models\\Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T06:33:41.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Specialization.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\DataLayer\\Models\\Specialization.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\Specialization.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Hospital\\DataLayer\\Models\\Specialization.cs",
+              "RelativeToolTip": "DataLayer\\Models\\Specialization.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T06:23:38.565Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

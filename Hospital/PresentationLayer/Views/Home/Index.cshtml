@@ -1,0 +1,16 @@
+﻿@model PresentationLayer.ViewModels.HomeVM
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To Our Hospital</h1>
+    <p>Thank you for choosing our hospital for your healthcare needs.</p>
+    <p>Here, we strive to provide the highest quality medical care to our patients.</p>
+    <p>Learn more about our services and specialties: </p>
+    @foreach(var item in Model.Specializations)
+    {
+        <a asp-controller="Specialization" asp-action="Index" asp-route-slug="@item.Slug" class="btn btn-primary" style="display:block; width:200px; margin:auto; margin-top:10px;">@item.Name</a>
+    }
+    <p style="margin-top:10px;">If you have any questions or need assistance, please don't hesitate to contact us.</p>
+</div>

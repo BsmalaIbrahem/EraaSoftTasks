@@ -1,0 +1,15 @@
+D:\C#\ErraSoft\Tasks\Hospital\DataLayer\bin\Debug\net8.0\DataLayer.deps.json
+D:\C#\ErraSoft\Tasks\Hospital\DataLayer\bin\Debug\net8.0\DataLayer.runtimeconfig.json
+D:\C#\ErraSoft\Tasks\Hospital\DataLayer\bin\Debug\net8.0\DataLayer.dll
+D:\C#\ErraSoft\Tasks\Hospital\DataLayer\bin\Debug\net8.0\DataLayer.pdb
+D:\C#\ErraSoft\Tasks\Hospital\DataLayer\obj\Debug\net8.0\DataLayer.csproj.AssemblyReference.cache
+D:\C#\ErraSoft\Tasks\Hospital\DataLayer\obj\Debug\net8.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\ErraSoft\Tasks\Hospital\DataLayer\obj\Debug\net8.0\DataLayer.AssemblyInfoInputs.cache
+D:\C#\ErraSoft\Tasks\Hospital\DataLayer\obj\Debug\net8.0\DataLayer.AssemblyInfo.cs
+D:\C#\ErraSoft\Tasks\Hospital\DataLayer\obj\Debug\net8.0\DataLayer.csproj.CoreCompileInputs.cache
+D:\C#\ErraSoft\Tasks\Hospital\DataLayer\obj\Debug\net8.0\DataLayer.sourcelink.json
+D:\C#\ErraSoft\Tasks\Hospital\DataLayer\obj\Debug\net8.0\DataLayer.dll
+D:\C#\ErraSoft\Tasks\Hospital\DataLayer\obj\Debug\net8.0\refint\DataLayer.dll
+D:\C#\ErraSoft\Tasks\Hospital\DataLayer\obj\Debug\net8.0\DataLayer.pdb
+D:\C#\ErraSoft\Tasks\Hospital\DataLayer\obj\Debug\net8.0\DataLayer.genruntimeconfig.cache
+D:\C#\ErraSoft\Tasks\Hospital\DataLayer\obj\Debug\net8.0\ref\DataLayer.dll

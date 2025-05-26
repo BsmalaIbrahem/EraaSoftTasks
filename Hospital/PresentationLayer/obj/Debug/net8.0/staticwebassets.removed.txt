@@ -1,0 +1,2 @@
+D:\C#\ErraSoft\Tasks\Hospital\PresentationLayer\wwwroot\assets\Doctors\doctor3.jpg
+D:\C#\ErraSoft\Tasks\Hospital\PresentationLayer\wwwroot\assets\Doctors\doctor5.jpg

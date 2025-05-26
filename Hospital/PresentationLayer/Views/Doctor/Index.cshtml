@@ -1,0 +1,45 @@
+﻿@model IEnumerable<DataLayer.Models.Doctor>
+
+
+
+<!-- Section-->
+<section class="py-5">
+   
+    <div class="container px-4 px-lg-5 mt-5">
+        <h2>Book an Appointment</h2>
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-3 justify-content-center">
+
+            @foreach (var item in Model)
+            {
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" style="height:300px;" src="~/assets/@item.Img" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div>
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Dr: @item.Name</h5>
+                                <p>Specialization : @item.specialization.Name</p>
+                                <!-- Product price-->
+
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark mt-auto" href="#">Book an Appointment</a>
+                            </div>
+                        </div>
+
+                        <!-- Product actions-->
+
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
