@@ -13,6 +13,7 @@ namespace DataLayer.Models
         public string Name { get; set; } = string.Empty;
         public string? Description { get; set; }
         public string Slug { get; set; } = string.Empty ;
+        public string ? Img { get; set; }
 
         public ICollection<Doctor> Doctors { get; set; } = new List<Doctor>();
     }

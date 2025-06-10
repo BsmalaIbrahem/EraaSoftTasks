@@ -14,11 +14,13 @@ namespace DataLayer.DataAccess
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=DESKTOP-A0K6IUH\\SQLEXPRESS;User Id=admin2;Password=33882426;DataBase=Hospital;TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=Hospital; Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;");
         }
 
        public DbSet<Specialization> Specializations { get; set; }
        public  DbSet<Doctor> Doctors { get; set; }
+       public  DbSet<DoctorSchedule> DoctorSchedules { get; set; }
+       public  DbSet<Appointment> Appointments { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

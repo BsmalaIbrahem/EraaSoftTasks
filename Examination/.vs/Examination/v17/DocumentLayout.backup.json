@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#\\ErraSoft\\Tasks\\Examination\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C#\\ErraSoft\\Tasks\\Examination\\Examination\\Migrations\\20250531162803_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Examination\\Migrations\\20250531162803_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F5F6CC0-2988-47A9-9EF2-02945FB4FA49}|Examination\\Examination.csproj|d:\\c#\\errasoft\\tasks\\examination\\examination\\models\\studentanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F5F6CC0-2988-47A9-9EF2-02945FB4FA49}|Examination\\Examination.csproj|solutionrelative:examination\\models\\studentanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F5F6CC0-2988-47A9-9EF2-02945FB4FA49}|Examination\\Examination.csproj|d:\\c#\\errasoft\\tasks\\examination\\examination\\models\\studentexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F5F6CC0-2988-47A9-9EF2-02945FB4FA49}|Examination\\Examination.csproj|solutionrelative:examination\\models\\studentexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C#\\ErraSoft\\Tasks\\Examination\\Examination\\Migrations\\20250531162323_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Examination\\Migrations\\20250531162323_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F5F6CC0-2988-47A9-9EF2-02945FB4FA49}|Examination\\Examination.csproj|d:\\c#\\errasoft\\tasks\\examination\\examination\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F5F6CC0-2988-47A9-9EF2-02945FB4FA49}|Examination\\Examination.csproj|solutionrelative:examination\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F5F6CC0-2988-47A9-9EF2-02945FB4FA49}|Examination\\Examination.csproj|d:\\c#\\errasoft\\tasks\\examination\\examination\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F5F6CC0-2988-47A9-9EF2-02945FB4FA49}|Examination\\Examination.csproj|solutionrelative:examination\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F5F6CC0-2988-47A9-9EF2-02945FB4FA49}|Examination\\Examination.csproj|d:\\c#\\errasoft\\tasks\\examination\\examination\\models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F5F6CC0-2988-47A9-9EF2-02945FB4FA49}|Examination\\Examination.csproj|solutionrelative:examination\\models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C#\\ErraSoft\\Tasks\\Examination\\Examination\\Migrations\\20250531161740_StudentExamsTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Examination\\Migrations\\20250531161740_StudentExamsTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250531162803_Initial.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Examination\\Examination\\Migrations\\20250531162803_Initial.cs",
+              "RelativeDocumentMoniker": "Examination\\Migrations\\20250531162803_Initial.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Examination\\Examination\\Migrations\\20250531162803_Initial.cs",
+              "RelativeToolTip": "Examination\\Migrations\\20250531162803_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T16:28:03.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20250531162323_Initial.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Examination\\Examination\\Migrations\\20250531162323_Initial.cs",
+              "RelativeDocumentMoniker": "Examination\\Migrations\\20250531162323_Initial.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Examination\\Examination\\Migrations\\20250531162323_Initial.cs",
+              "RelativeToolTip": "Examination\\Migrations\\20250531162323_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T16:23:23.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20250531161740_StudentExamsTables.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Examination\\Examination\\Migrations\\20250531161740_StudentExamsTables.cs",
+              "RelativeDocumentMoniker": "Examination\\Migrations\\20250531161740_StudentExamsTables.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Examination\\Examination\\Migrations\\20250531161740_StudentExamsTables.cs",
+              "RelativeToolTip": "Examination\\Migrations\\20250531161740_StudentExamsTables.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T16:17:40.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Examination\\Examination\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Examination\\Models\\Student.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Examination\\Examination\\Models\\Student.cs",
+              "RelativeToolTip": "Examination\\Models\\Student.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAkwBEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T09:38:39.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentAnswer.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Examination\\Examination\\Models\\StudentAnswer.cs",
+              "RelativeDocumentMoniker": "Examination\\Models\\StudentAnswer.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Examination\\Examination\\Models\\StudentAnswer.cs",
+              "RelativeToolTip": "Examination\\Models\\StudentAnswer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T09:15:47.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Exam.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Examination\\Examination\\Models\\Exam.cs",
+              "RelativeDocumentMoniker": "Examination\\Models\\Exam.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Examination\\Examination\\Models\\Exam.cs",
+              "RelativeToolTip": "Examination\\Models\\Exam.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T08:50:17.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentExam.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Examination\\Examination\\Models\\StudentExam.cs",
+              "RelativeDocumentMoniker": "Examination\\Models\\StudentExam.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Examination\\Examination\\Models\\StudentExam.cs",
+              "RelativeToolTip": "Examination\\Models\\StudentExam.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T08:45:36.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\C#\\ErraSoft\\Tasks\\Examination\\Examination\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Examination\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\C#\\ErraSoft\\Tasks\\Examination\\Examination\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Examination\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wCAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T08:22:18.325Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -4,50 +4,53 @@
     <!-- Navigation-->
 
     <!-- Header-->
-    <header class="bg-dark py-5">
+    <header class="bg-light py-5">
         <div class="container px-4 px-lg-5 my-5">
-            <div class="text-center text-white">
+            <div class="text-center">
                 <h1 class="display-4 fw-bolder">@Model.Name</h1>
-                <p class="lead fw-normal text-white-50 mb-0">@Model.Description</p>
+                <p class="lead fw-normal  mb-0">@Model.Description</p>
             </div>
         </div>
     </header>
     <!-- Section-->
-    <section class="py-5">
-        <h2 class="text-center">Doctors</h2>
-        <div class="container px-4 px-lg-5 mt-5">
-            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                
-                @foreach (var item in Model.Doctors)
-                {
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="~/assets/@item.Img" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Dr: @item.Name</h5>
-                                    <!-- Product price-->
-                                   
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a>
-                                </div>
-                             </div>
-                             
-                            <!-- Product actions-->
+<section id="doctors" class="doctors section">
 
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Doctors</h2>
+        <p style="display:none">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+        <div class="row gy-4">
+
+            @foreach(var item in Model.Doctors)
+            {
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-member d-flex align-items-start">
+                        <div class="pic"><img src="~/assets/@item.Img" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>@item.Name</h4>
+                            <span>@Model.Name</span>
+                            <p style="font-size:13px;">@item.Description</p>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter-x"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""> <i class="bi bi-linkedin"></i> </a>
+                            </div>
                         </div>
                     </div>
-                }
-            </div>
+                </div>
+            }
+           
+            
         </div>
-    </section>
-    <!-- Footer-->
-   
+
+    </div>
+
+</section>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
