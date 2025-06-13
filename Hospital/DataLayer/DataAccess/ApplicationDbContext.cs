@@ -27,6 +27,7 @@ namespace DataLayer.DataAccess
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Specialization>().HasIndex(x => x.Slug).IsUnique();
             modelBuilder.Entity<Specialization>().Property(x => x.Description).HasColumnType("text");
+            modelBuilder.Entity<Doctor>().Property(x => x.ExaminationDuration).HasDefaultValue(30);
             new InitialSeeder(modelBuilder);
         }
     }

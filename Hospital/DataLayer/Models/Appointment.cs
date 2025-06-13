@@ -9,6 +9,7 @@ namespace DataLayer.Models
     public class Appointment : BaseModel
     {
         public int Id { get; set; }
+        public DateOnly Date { get; set; }
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
         public string PatientName { get; set; } = string.Empty;

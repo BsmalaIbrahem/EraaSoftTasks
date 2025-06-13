@@ -33,6 +33,9 @@ namespace DataLayer.Migrations
                     b.Property<DateTime?>("CreatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateOnly>("Date")
+                        .HasColumnType("date");
+
                     b.Property<DateTime?>("DeletedTime")
                         .HasColumnType("datetime2");
 
@@ -90,6 +93,11 @@ namespace DataLayer.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("ExaminationDuration")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(30);
+
                     b.Property<string>("Img")
                         .HasColumnType("nvarchar(max)");
 
@@ -117,6 +125,7 @@ namespace DataLayer.Migrations
                         {
                             Id = 1,
                             Description = "Dr. Ibrahim Awad is a specialist in Internal Medicine with over 10 years of experience in treating various medical conditions. He is known for his patient-centered approach and dedication to improving health outcomes.",
+                            ExaminationDuration = 30,
                             Img = "Doctors/doctor1.jpg",
                             IsDeleted = false,
                             Name = "Ibrahim Awad",
@@ -126,6 +135,7 @@ namespace DataLayer.Migrations
                         {
                             Id = 2,
                             Description = "Dr. Ahmed Essawy is a renowned Internal Medicine specialist with a focus on chronic disease management. He has a passion for educating patients about their health and empowering them to take control of their well-being.",
+                            ExaminationDuration = 30,
                             Img = "Doctors/doctor2.jpg",
                             IsDeleted = false,
                             Name = "Ahmed Essawy",
@@ -135,6 +145,7 @@ namespace DataLayer.Migrations
                         {
                             Id = 3,
                             Description = "Dr. Mohamed Ali is a dedicated Pediatrician with a love for working with children. He has extensive experience in diagnosing and treating childhood illnesses, and he is committed to providing compassionate care to his young patients.",
+                            ExaminationDuration = 30,
                             Img = "Doctors/doctor4.jpg",
                             IsDeleted = false,
                             Name = "Mohamed Ali",
@@ -144,6 +155,7 @@ namespace DataLayer.Migrations
                         {
                             Id = 4,
                             Description = "Dr. Nader Hamdy is a Pediatric specialist with a focus on developmental disorders. He works closely with families to ensure the best possible outcomes for children with special needs.",
+                            ExaminationDuration = 30,
                             Img = "Doctors/doctor6.jpg",
                             IsDeleted = false,
                             Name = "Nader Hamdy",
@@ -153,6 +165,7 @@ namespace DataLayer.Migrations
                         {
                             Id = 5,
                             Description = "Dr. Mohamed Zaky is a Pediatrician with a passion for child health and wellness. He believes in a holistic approach to healthcare, addressing both physical and emotional needs of his young patients.",
+                            ExaminationDuration = 30,
                             Img = "Doctors/doctor2.jpg",
                             IsDeleted = false,
                             Name = "Mohamed Zaky",
