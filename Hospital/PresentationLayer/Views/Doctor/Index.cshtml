@@ -8,7 +8,10 @@
 </style>
 <!-- Section-->
 <section id="doctors" class="doctors section">
-
+    @if (TempData["Success"] is not null)
+    {
+        <h4 style="color:red">@TempData["Success"]</h4>
+    }
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Doctors</h2>

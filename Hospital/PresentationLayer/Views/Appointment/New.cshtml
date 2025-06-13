@@ -1,7 +1,10 @@
 ﻿@model DataLayer.Models.Doctor
 
 <section id="appointment" class="appointment section">
-
+    @if (TempData["Success"] is not null)
+    {
+        <h4 style="color:red">TempData["Success"]</h4>
+    }
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Book Appointment With Dr. @Model.Name</h2>
@@ -10,7 +13,7 @@
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <form action="" method="post" role="form" class="php-email-form">
+        <form action="/appointment/new" method="post" >
             <div class="row">
                 <div class="col-md-4 form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
@@ -27,16 +30,24 @@
                     <input type="text" name="date" class="form-control" id="date" placeholder="Appointment Date" required="">
                 </div>
                 
+                <div class="col-md-4 form-group mt-3">
+                    <select id="time" name="time"
+                            class="form-control" required>
+                        <option value="">اختر الوقت</option>
+                    </select>
+                </div>
+
+                <!-- لو بتبعتي DoctorId مع الفورم، خليه Hidden -->
+                <input type="hidden" name="doctorId" id="doctorId" value="@Model.Id">
+                <input type="hidden" name="ExaminationDuration" value="@Model.ExaminationDuration">
+
             </div>
 
             <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+                <textarea class="form-control" name="Details" rows="5" placeholder="Message (Optional)"></textarea>
             </div>
             <div class="mt-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
-                <div class="text-center"><button type="submit">Make an Appointment</button></div>
+                <div class="text-center"><button class="btn btn-primary" type="submit">Make an Appointment</button></div>
             </div>
         </form>
 
@@ -44,15 +55,102 @@
 
 </section>
 
+
+
 <script>
+    /* === 1) التقويم مع تفعيل أيام محددة ==================== */
+    const allowedDays = @ViewBag.doctorDays;   // Sunday, Thursday, Saturday
+
     flatpickr("#date", {
-      dateFormat: "Y-m-d",
-      disable: [
-        function(date) {
-          // السماح فقط بـ (الأحد = 0، الخميس = 4، السبت = 6)
-          const allowedDays = @ViewBag.doctorDays;
-          return !allowedDays.includes(date.getDay());
-        }
-      ]
+        dateFormat: "Y-m-d",
+        disable: [date => !allowedDays.includes(date.getDay())],
+        onChange: loadAvailableTimes
     });
+
+    /* === 2) تحميل الأوقات المتاحة =========================== */
+    function loadAvailableTimes(selectedDates, dateStr) {
+        const doctorId   = document.getElementById('doctorId').value;
+        const timeSelect = document.getElementById('time');
+
+        // تنظيف القائمة أولاً
+        timeSelect.innerHTML = '<option value="">جارٍ التحميل...</option>';
+
+        if (!dateStr) return;   // المستخدم مسح التاريخ
+
+        /* ◼ استدعاء الـ API */
+        fetch('/Appointment/GetAvailableTime', {
+            method : 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body   : JSON.stringify({ doctorId: +doctorId, date: dateStr })
+        })
+        .then(r => r.json())
+        .then(data => {
+            const schedule = data.doctorSchedule;
+            const booked   = data.bookedSchedules || [];
+            timeSelect.innerHTML = '';   // فرّغ الخيارات
+
+            if (!schedule) {
+                timeSelect.innerHTML = '<option value="">الطبيب لا يعمل اليوم</option>';
+                return;
+            }
+
+            /* ◼ حساب الـ slots داخل الـ frontend */
+            const slotLen = +(schedule.duration || 30);      // بالدقيقة
+            const slots   = computeSlots(dateStr, schedule, booked, slotLen);
+
+            if (!slots.length) {
+                timeSelect.innerHTML = '<option value="">لا توجد مواعيد متاحة</option>';
+                return;
+            }
+
+            slots.forEach(s => {
+                const opt = document.createElement('option');
+                opt.value = s.start;
+                opt.textContent = `${s.start} – ${s.end}`;
+                timeSelect.appendChild(opt);
+            });
+        })
+        .catch(err => {
+            console.error(err);
+            timeSelect.innerHTML = '<option value="">تعذّر جلب المواعيد</option>';
+        });
+    }
+
+    /* === 3) دوالّ مساعدة لحساب المقاطع ====================== */
+    function stringToDate(timeStr, dateStr) {
+        // "09:30:00" + "2025-06-13" → Date
+        const [y, m, d] = dateStr.split('-').map(Number);
+        const [hh, mm, ss] = timeStr.split(':').map(Number);
+        return new Date(y, m - 1, d, hh, mm, ss || 0);
+    }
+
+    function formatTime(date) {
+        return date.toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit', hour12: false });
+    }
+
+    function overlaps(aStart, aEnd, bStart, bEnd) {
+        return aStart < bEnd && aEnd > bStart;
+    }
+
+    function computeSlots(dateStr, schedule, booked, slotLen) {
+        const start = stringToDate(schedule.startTime, dateStr);
+        const end   = stringToDate(schedule.endTime,   dateStr);
+        const step  = slotLen * 60 * 1000;   // إلى ملي‑ثانية
+        const slots = [];
+
+        for (let cur = new Date(start); cur.getTime() + step <= end.getTime(); cur = new Date(cur.getTime() + step)) {
+            const next = new Date(cur.getTime() + step);
+
+            const hasOverlap = booked.some(b =>
+                overlaps(cur, next,
+                         stringToDate(b.startTime, dateStr),
+                         stringToDate(b.endTime,   dateStr))
+            );
+
+            if (!hasOverlap) {
+                slots.push({ start: formatTime(cur), end: formatTime(next) });
+            }
+        }
+        return slots;
+    }
 </script>
