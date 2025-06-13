@@ -33,9 +33,10 @@ namespace PresentationLayer.Controllers
             }
 
             var doctorSchedule = _context.DoctorSchedules.Where(x => x.DoctorId == request.DoctorId && x.DayName.Equals(day)).FirstOrDefault();
-            //
+            var BookedSchedules = _context.Appointments.Where(x => x.Date == request.Date).Select(x => new {x.StartTime, x.EndTime}).ToList();
 
-            return Json(day);
+
+            return Json(new { doctorSchedule , BookedSchedules });
         }
 
         [HttpPost]
