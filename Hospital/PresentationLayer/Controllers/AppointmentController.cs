@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PresentationLayer.ViewModels;
+using System.Text.Json;
 
 namespace PresentationLayer.Controllers
 {
@@ -11,6 +12,13 @@ namespace PresentationLayer.Controllers
         public IActionResult New(int DoctorId)
         {
             var doctor = _context.Doctors.Include(x => x.DoctorSchedules).FirstOrDefault(x => x.Id == DoctorId);
+            if(doctor == null)
+            {
+                return NotFound();
+            }
+
+            var doctorDays = doctor.DoctorSchedules.Select(x => (int)x.DayName).ToArray();
+            ViewBag.doctorDays = JsonSerializer.Serialize(doctorDays);
             return View(doctor);
         }
 
