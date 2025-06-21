@@ -81,7 +81,9 @@
 					<!-- Speaker 1 -->
 					<div class="speaker-item">
 						<div class="image">
-							<img src="~/@item.ImgPath" alt="speaker" class="img-fluid" style="height:244.984px">
+							<a asp-controller="Speaker" asp-action="Details" asp-route-id = "@item.Id">
+								<img src="~/@item.ImgPath" alt="speaker" class="img-fluid" style="height:244.984px">
+							</a>
 							<div class="primary-overlay"></div>
 							<div class="socials">
 								<ul class="list-inline">
@@ -93,8 +95,10 @@
 							</div>
 						</div>
 						<div class="content text-center">
-							<h5><a href="~/single-speaker.html">@item.Name</a></h5>
-							<p>@item.Specialization</p>
+							<a asp-controller="Speaker" asp-action="Details" asp-route-id = "@item.Id">
+								<h5>@item.Name</h5>
+								<p>@item.Specialization</p>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -209,7 +213,7 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="section-title">
-						<h3>Eventre <span class="alternate">News</span></h3>
+						<h3>Eventre <span class="alternate">Events</span></h3>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore dolore</p>
 					</div>
 				</div>
@@ -219,7 +223,7 @@
 					<div class="col-lg-4 col-md-6 col-sm-8 col-10 m-auto">
 						<div class="blog-post">
 							<div class="post-thumb">
-								<a href="~/news-single.html">
+							<a asp-controller="Event" asp-action="Details" asp-route-id="@item.Id">
 									<img src="~/@item.ImgPath" alt="post-image" class="img-fluid" style="width:100%; height:244.984px;">
 								</a>
 							</div>
@@ -228,7 +232,7 @@
 									<h4>@item.StartDate.Day<span>@item.StartDate.ToString("MMM")</span></h4>
 								</div>
 								<div class="post-title">
-									<h2><a href="~/news-single.html">@item.Title</a></h2>
+									<h2><a asp-controller="Event" asp-action="Details" asp-route-id="@item.Id">@item.Title</a></h2>
 								</div>
 								<div class="post-meta">
 									<ul class="list-inline">

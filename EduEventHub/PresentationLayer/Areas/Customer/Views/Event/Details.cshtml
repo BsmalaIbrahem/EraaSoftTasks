@@ -50,6 +50,10 @@
 								{
 									<a href="#" class="btn btn-main-sm">Book Ticket</a>
 								}
+								else
+								{
+									<a href="#" class="btn btn-main-md" style="background-color:#c09c83; cursor:not-allowed">Not Available !</a>
+								}
 
 							</div>
 						</div>
@@ -126,8 +130,10 @@
 												</div>
 												<!-- Speaker -->
 												<div class="speaker">
-													<img src="~/@content.Speaker.ImgPath" alt="speaker-thumb-one" style="width:65px; height:65px">
-													<span class="name">@content.Speaker.Name</span>
+													<a asp-controller="Speaker" asp-action="Details" asp-route-id="@content.Speaker.Id">
+														<img src="~/@content.Speaker.ImgPath" alt="speaker-thumb-one" style="width:65px; height:65px">
+														<span class="name">@content.Speaker.Name</span>
+													</a>
 												</div>
 												<!-- Subject -->
 												<div class="subject" style="width:45%;">@content.Subject</div>
@@ -151,7 +157,11 @@
 					{
 						<a href="#" class="btn btn-main-md">Book Ticket</a>
 					}
-					
+					else
+					{
+						<a href="#" class="btn btn-main-md" style="background-color:#c09c83; cursor:not-allowed">Not Available !</a>
+					}
+
 				</div>
 
 			</div>

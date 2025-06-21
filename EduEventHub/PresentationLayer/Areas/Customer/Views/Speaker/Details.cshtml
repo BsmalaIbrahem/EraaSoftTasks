@@ -1,0 +1,169 @@
+﻿@model SpeakerDetailsViewModel
+
+
+<section class="page-title bg-title overlay-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<div class="title">
+					<h3>Speaker Details</h3>
+				</div>
+				<ol class="breadcrumb p-0 m-0">
+					<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+					<li class="breadcrumb-item active">Speaker Details</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Page Title  ====-->
+
+
+<section class="section single-speaker">
+	<div class="container">
+		<div class="block">
+			<div class="row">
+				<div class="col-lg-5 col-md-6 align-self-md-center">
+					<div class="image-block">
+						<img src="~/@Model.Speaker.ImgPath" class="img-fluid" alt="speaker">
+					</div>
+				</div>
+				<div class="col-lg-7 col-md-6 align-self-center">
+					<div class="content-block">
+						<div class="name">
+							<h3>@Model.Speaker.Name</h3>
+						</div>
+						<div class="profession">
+							<p>@Model.Speaker.Specialization</p>
+						</div>
+						<div class="details">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam quis nostrud.laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+								Duis aute irure dolor in reprehenderit in voluptate velit esse.
+								<br>
+							</p>
+							<p>
+								Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+								<br>
+								Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur
+							</p>
+						</div>
+						@if (Model.Speaker.SocialMedias.Count != 0)
+						{
+							<div class="social-profiles">
+								<h5>Social Profiles</h5>
+								<ul class="list-inline social-list">
+									@foreach (var social in Model.Speaker.SocialMedias)
+									{
+										if (social.Platform == PlatForm.Twitter)
+										{
+											<li class="list-inline-item">
+												<a href="@social.Url"><i class="fa fa-twitter"></i></a>
+											</li>
+										}
+										if (social.Platform == PlatForm.LinkedIn)
+										{
+											<li class="list-inline-item">
+												<a href="@social.Url"><i class="fa fa-linkedin"></i></a>
+											</li>
+										}
+										if (social.Platform == PlatForm.Facebook)
+										{
+											<li class="list-inline-item">
+												<a href="@social.Url"><i class="fa fa-facebook"></i></a>
+											</li>
+										}
+										if (social.Platform == PlatForm.YouTube)
+										{
+											<li class="list-inline-item">
+												<a href="@social.Url"><i class="fa fa-youtube"></i></a>
+											</li>
+										}
+
+										if (social.Platform == PlatForm.Instagram)
+										{
+											<li class="list-inline-item">
+												<a href="@social.Url"><i class="fa fa-instagram"></i></a>
+											</li>
+										}
+
+
+									}
+								</ul>
+							</div>
+						}
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<section class="section schedule" style="padding-top:0;">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h3>Speaker <span class="alternate"> Events</span></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut labore</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				
+
+
+
+				<div class="schedule-contents bg-schedule">
+					<div class="tab-content" id="pills-tabContent">
+						@{
+							var j = 0;
+						}
+
+							<div class="tab-pane fade show active schedule-item">
+								<!-- Headings -->
+								<ul class="m-0 p-0">
+									<li class="headings">
+										<div class="time">Date</div>
+										<div class="speaker">Event</div>
+										<div class="subject">Subject</div>
+									</li>
+
+									@foreach (var sEvent in Model.Events)
+									{
+										<!-- Schedule Details -->
+										<li class="schedule-details">
+											<div class="block">
+												<a asp-controller="Event" asp-action="Details" asp-route-id="@sEvent.Id">
+												<!-- time -->
+												<div class="time">
+													<i class="fa fa-clock-o"></i>
+													<span class="time">@sEvent.StartDate.ToString("dd MMMM yyyy")</span>
+												</div>
+												<!-- Speaker -->
+												<div class="speaker" style="text-align:center">
+													<img src="~/@sEvent.ImgPath" alt="speaker-thumb-one" style="width:65px; height:65px;">
+													<span class="name">@sEvent.Title</span>
+													
+												</div>
+												<!-- Subject -->
+												<div class="subject" style="width:45%;">@sEvent.Description</div>
+												</a>
+											</div>
+										</li>
+
+									}
+								</ul>
+							</div>
+
+		
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
