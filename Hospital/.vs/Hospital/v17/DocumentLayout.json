@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\hospital\\presentationlayer\\viewmodels\\bookappoinmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\viewmodels\\bookappoinmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\hospital\\presentationlayer\\views\\doctor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\doctor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\hospital\\presentationlayer\\viewmodels\\doctorfiltersvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\viewmodels\\doctorfiltersvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\hospital\\presentationlayer\\views\\appointment\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\appointment\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\hospital\\presentationlayer\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\hospital\\presentationlayer\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\hospital\\presentationlayer\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6B26619E-ECA0-4972-8D6D-AD8CE92F844D}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0D7E99F-156E-4177-BF14-40E3AE95579F}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\hospital\\datalayer\\models\\specialization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0D7E99F-156E-4177-BF14-40E3AE95579F}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\specialization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0D7E99F-156E-4177-BF14-40E3AE95579F}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\hospital\\datalayer\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0D7E99F-156E-4177-BF14-40E3AE95579F}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0D7E99F-156E-4177-BF14-40E3AE95579F}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\hospital\\datalayer\\seeders\\initialseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0D7E99F-156E-4177-BF14-40E3AE95579F}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\seeders\\initialseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0D7E99F-156E-4177-BF14-40E3AE95579F}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\hospital\\datalayer\\dataaccess\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0D7E99F-156E-4177-BF14-40E3AE95579F}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\dataaccess\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0D7E99F-156E-4177-BF14-40E3AE95579F}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\hospital\\datalayer\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0D7E99F-156E-4177-BF14-40E3AE95579F}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,96 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DoctorFiltersVM.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\ViewModels\\DoctorFiltersVM.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\ViewModels\\DoctorFiltersVM.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\ViewModels\\DoctorFiltersVM.cs",
-              "RelativeToolTip": "PresentationLayer\\ViewModels\\DoctorFiltersVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T23:53:50.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DoctorController.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Controllers\\DoctorController.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\DoctorController.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Controllers\\DoctorController.cs",
-              "RelativeToolTip": "PresentationLayer\\Controllers\\DoctorController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB0AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T22:56:58.915Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Views\\Doctor\\Index.cshtml",
-              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Doctor\\Index.cshtml",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Views\\Doctor\\Index.cshtml",
-              "RelativeToolTip": "PresentationLayer\\Views\\Doctor\\Index.cshtml",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAmwHMAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-09T22:56:15.293Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "InitialSeeder.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\DataLayer\\Seeders\\InitialSeeder.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Seeders\\InitialSeeder.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\DataLayer\\Seeders\\InitialSeeder.cs",
-              "RelativeToolTip": "DataLayer\\Seeders\\InitialSeeder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T16:31:06.244Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "PresentationLayer\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "PresentationLayer\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAEMAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAjwKcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-06T15:31:42.969Z",
+              "WhenOpened": "2025-06-13T18:10:04.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookAppoinmentVM.cs",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\ViewModels\\BookAppoinmentVM.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\ViewModels\\BookAppoinmentVM.cs",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\ViewModels\\BookAppoinmentVM.cs",
+              "RelativeToolTip": "PresentationLayer\\ViewModels\\BookAppoinmentVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T17:12:04.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\DataLayer\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\Appointment.cs",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\DataLayer\\Models\\Appointment.cs",
+              "RelativeToolTip": "DataLayer\\Models\\Appointment.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T17:01:12.689Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\DataLayer\\DataAccess\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "DataLayer\\DataAccess\\ApplicationDbContext.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\DataLayer\\DataAccess\\ApplicationDbContext.cs",
-              "RelativeToolTip": "DataLayer\\DataAccess\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBwAAAA+AAAAAAAAAA==",
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\DataLayer\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\Doctor.cs",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\DataLayer\\Models\\Doctor.cs",
+              "RelativeToolTip": "DataLayer\\Models\\Doctor.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T12:13:56.129Z"
+              "WhenOpened": "2025-06-13T10:40:11.807Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Specialization.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\DataLayer\\Models\\Specialization.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Models\\Specialization.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\DataLayer\\Models\\Specialization.cs",
-              "RelativeToolTip": "DataLayer\\Models\\Specialization.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Views\\Doctor\\Index.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Doctor\\Index.cshtml",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Views\\Doctor\\Index.cshtml",
+              "RelativeToolTip": "PresentationLayer\\Views\\Doctor\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-13T09:43:54.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "New.cshtml",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Views\\Appointment\\New.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Appointment\\New.cshtml",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Views\\Appointment\\New.cshtml",
+              "RelativeToolTip": "PresentationLayer\\Views\\Appointment\\New.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-13T07:09:04.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Controllers\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\AppointmentController.cs",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\Hospital\\PresentationLayer\\Controllers\\AppointmentController.cs",
+              "RelativeToolTip": "PresentationLayer\\Controllers\\AppointmentController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAD0AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T06:23:38.565Z",
+              "WhenOpened": "2025-06-12T07:58:23.507Z",
               "EditorCaption": ""
             }
           ]

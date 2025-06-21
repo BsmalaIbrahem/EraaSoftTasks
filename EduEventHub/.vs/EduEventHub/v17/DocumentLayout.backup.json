@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\datalayer\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\areas\\customer\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\areas\\customer\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\areas\\customer\\views\\event\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\areas\\customer\\views\\event\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\datalayer\\models\\speaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\speaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\datalayer\\models\\eventcontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\eventcontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\datalayer\\models\\eventagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\eventagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\datalayer\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Views\\Event\\Details.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer\\Areas\\Customer\\Views\\Event\\Details.cshtml",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Views\\Event\\Details.cshtml",
+              "RelativeToolTip": "PresentationLayer\\Areas\\Customer\\Views\\Event\\Details.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAkwIgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T17:29:11.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EventContent.cs",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Models\\EventContent.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\EventContent.cs",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Models\\EventContent.cs",
+              "RelativeToolTip": "DataLayer\\Models\\EventContent.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T17:27:25.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EventAgenda.cs",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Models\\EventAgenda.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\EventAgenda.cs",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Models\\EventAgenda.cs",
+              "RelativeToolTip": "DataLayer\\Models\\EventAgenda.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T17:07:11.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Speaker.cs",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Models\\Speaker.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\Speaker.cs",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Models\\Speaker.cs",
+              "RelativeToolTip": "DataLayer\\Models\\Speaker.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T16:47:18.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Event.cs",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\Event.cs",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Models\\Event.cs",
+              "RelativeToolTip": "DataLayer\\Models\\Event.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T16:47:08.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "DataLayer\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAA9wCIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T16:45:50.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventController.cs",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Controllers\\EventController.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Areas\\Customer\\Controllers\\EventController.cs",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Controllers\\EventController.cs",
+              "RelativeToolTip": "PresentationLayer\\Areas\\Customer\\Controllers\\EventController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T12:51:15.861Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+﻿@model CustomerHomeVM
+
+	<section class="banner bg-banner-one overlay">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<!-- Content Block -->
+					<div class="block">
+						<!-- Coundown Timer -->
+						<div class="timer"></div>
+						<h1>Business</h1>
+						<h2>Conference 2017</h2>
+						<h6>02-05 July 2017 California</h6>
+						<!-- Action Button -->
+						<a href="~/#" class="btn btn-white-md">get ticket now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--====  End of Banner  ====-->
+	<!--===========================
+	=            About            =
+	============================-->
+
+	<section class="section about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 align-self-center">
+					<div class="image-block bg-about">
+						<img class="img-fluid" src="~/assets/images/speakers/featured-speaker.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-6 align-self-center">
+					<div class="content-block">
+						<h2>About The <span class="alternate">Eventre</span></h2>
+						<div class="description-one">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco.
+							</p>
+						</div>
+						<div class="description-two">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt ut labore et dolore magna aliq enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+						</div>
+						<ul class="list-inline">
+							<li class="list-inline-item">
+								<a href="~/#" class="btn btn-main-md">Buy ticket</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="~/#" class="btn btn-transparent-md">Read more</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--====  End of About  ====-->
+	<!--==============================
+	=            Speakers            =
+	===============================-->
+
+	<section class="section speakers bg-speaker overlay-lighter">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<!-- Section Title -->
+					<div class="section-title white">
+						<h3>Our <span class="alternate">Speakers!</span></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut labore</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+
+			@foreach (var item in Model.Speakers)
+			{
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<!-- Speaker 1 -->
+					<div class="speaker-item">
+						<div class="image">
+							<img src="~/@item.ImgPath" alt="speaker" class="img-fluid" style="height:244.984px">
+							<div class="primary-overlay"></div>
+							<div class="socials">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a href="~/#"><i class="fa fa-facebook"></i></a></li>
+									<li class="list-inline-item"><a href="~/#"><i class="fa fa-twitter"></i></a></li>
+									<li class="list-inline-item"><a href="~/#"><i class="fa fa-linkedin"></i></a></li>
+									<li class="list-inline-item"><a href="~/#"><i class="fa fa-pinterest"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content text-center">
+							<h5><a href="~/single-speaker.html">@item.Name</a></h5>
+							<p>@item.Specialization</p>
+						</div>
+					</div>
+				</div>
+			}
+
+			</div>
+		</div>
+	</section>
+
+	<!--====  End of Speakers  ====-->
+	<!--==============================
+	
+	
+	<!--==============================
+	=            Sponsors            =
+	===============================-->
+
+	<section class="sponsors section bg-sponsors overlay-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="section-title">
+						<h3>Our <span class="alternate">Sponsors</span></h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore dolore</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<!-- Title -->
+					<div class="sponsor-title text-center">
+						<h5>Platinum Sponsors</h5>
+					</div>
+					<div class="block text-center">
+						<!-- Sponsors image list -->
+						<ul class="list-inline sponsors-list">
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="~/#">
+										<img src="~/assets/images/sponsors/pt-spon-two.png" alt="sponsors-logo" class="img-fluid">
+									</a>
+								</div>
+							</li>
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="~/#">
+										<img src="~/assets/images/sponsors/pt-spon-two.png" alt="sponsors-logo" class="img-fluid">
+									</a>
+								</div>
+							</li>
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="~/#">
+										<img src="~/assets/images/sponsors/pt-spon-three.png" alt="sponsors-logo" class="img-fluid">
+									</a>
+								</div>
+							</li>
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="~/#">
+										<img src="~/assets/images/sponsors/pt-spon-four.png" alt="sponsors-logo" class="img-fluid">
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- Title -->
+					<div class="sponsor-title text-center">
+						<h5>Gold Sponsors</h5>
+					</div>
+					<div class="block text-center">
+						<!-- Sponsors image list -->
+						<ul class="list-inline sponsors-list">
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="~/#">
+										<img src="~/assets/images/sponsors/gl-spon-one.png" alt="sponsors-logo" class="img-fluid">
+									</a>
+								</div>
+							</li>
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="~/#">
+										<img src="~/assets/images/sponsors/gl-spon-two.png" alt="sponsors-logo" class="img-fluid">
+									</a>
+								</div>
+							</li>
+							<li class="list-inline-item">
+								<div class="image-block text-center">
+									<a href="~/#">
+										<img src="~/assets/images/sponsors/gl-spon-three.png" alt="sponsors-logo" class="img-fluid">
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="sponsor-btn text-center">
+						<a href="~/#" class="btn btn-main-md">Become a sponsor</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--====  End of Sponsors  ====-->
+	<!--================================
+	=            News Posts            =
+	=================================-->
+
+	<section class="news section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="section-title">
+						<h3>Eventre <span class="alternate">News</span></h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore dolore</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				@foreach (var item in Model.Events) {
+					<div class="col-lg-4 col-md-6 col-sm-8 col-10 m-auto">
+						<div class="blog-post">
+							<div class="post-thumb">
+								<a href="~/news-single.html">
+									<img src="~/@item.ImgPath" alt="post-image" class="img-fluid" style="width:100%; height:244.984px;">
+								</a>
+							</div>
+							<div class="post-content">
+								<div class="date">
+									<h4>@item.StartDate.Day<span>@item.StartDate.ToString("MMM")</span></h4>
+								</div>
+								<div class="post-title">
+									<h2><a href="~/news-single.html">@item.Title</a></h2>
+								</div>
+								<div class="post-meta">
+									<ul class="list-inline">
+										<li class="list-inline-item">
+										
+											<a asp-controller="Event" asp-action="Details" asp-route-id="@item.Id">
+												<i class="fa fa-eye"></i> More Details
+										    </a>
+										</li>
+
+									<li class="list-inline-item">
+										@if (item.StartDate >= DateTime.Now)
+										{
+											<a href="~/#"><i class="fa fa-ticket"></i> Book Ticket</a>
+										}
+										else
+										{
+											<span><i class="fa fa-exclamation"></i>Not Available</span>
+										}
+									</li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				}
+
+			</div>
+		</div>
+	</section>
+
+	<!--====  End of News Posts  ====-->
+	<!--==============================================
+	=            Call to Action Subscribe            =
+	===============================================-->
+
+	<section class="cta-subscribe bg-subscribe overlay-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 mr-auto">
+					<!-- Subscribe Content -->
+					<div class="content">
+						<h3>Subscribe to Our <span class="alternate">Newsletter</span></h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor</p>
+					</div>
+				</div>
+				<div class="col-md-6 ml-auto align-self-center">
+					<!-- Subscription form -->
+					<form action="#" class="row">
+						<div class="col-lg-8 col-md-12">
+							<input type="email" class="form-control main white mb-lg-0" placeholder="Email">
+						</div>
+						<div class="col-lg-4 col-md-12">
+							<div class="subscribe-button">
+								<button class="btn btn-main-md">Subscribe</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--====  End of Call to Action Subscribe  ====-->
+	<!--================================
+	=            Google Map            =
+	=================================-->
+
+	<section class="map">
+		<!-- Google Map -->
+		<div id="map"></div>
+		<div class="address-block">
+			<h4>Docklands Convention</h4>
+			<ul class="address-list p-0 m-0">
+				<li><i class="fa fa-home"></i><span>1201 Park Street, Fifth Avenue, <br>Dhanmondy, Dhaka.</span></li>
+				<li><i class="fa fa-phone"></i><span>[88] 657 524 332</span></li>
+			</ul>
+			<a href="~/#" class="btn btn-white-md">Get Direction</a>
+		</div>
+	</section>
+
+

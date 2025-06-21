@@ -1,0 +1,160 @@
+﻿@model Event
+
+<section class="page-title bg-title overlay-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<div class="title">
+					<h3 style="text-transform:capitalize;">@Model.Title</h3>
+				</div>
+				<ol class="breadcrumb p-0 m-0">
+					<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+					<li class="breadcrumb-item active">Events</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Page Title  ====-->
+
+
+<section class="section single-speaker" style="padding-bottom:10px">
+	<div class="container">
+		<div class="block">
+			<div class="row">
+				<div class="col-lg-5 col-md-6 align-self-md-center">
+					<div class="image-block">
+						<img src="~/@Model.ImgPath" class="img-fluid" alt="speaker">
+					</div>
+				</div>
+				<div class="col-lg-7 col-md-6 align-self-center">
+					<div class="content-block">
+						<div class="name">
+							<h3>@Model.Title</h3>
+						</div>
+						<div class="profession">
+							<p>@Model.Category.Name</p>
+						</div>
+						<div class="details">
+							<p>
+								@Model.Description
+							</p>
+							<h4>Price : @Model.Price $</h4>
+
+						</div>
+						<div>
+							
+							<div class="">
+								@if (Model.StartDate > DateTime.Now)
+								{
+									<a href="#" class="btn btn-main-sm">Book Ticket</a>
+								}
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</section>
+
+<section class="section schedule" style="padding-top:0;">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h3>Event <span class="alternate">Agenda</span></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut labore</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="schedule-tab">
+					<ul class="nav nav-pills text-center">
+						@{
+							var count = 1;
+						}
+						@foreach(var item in Model.Agenda)
+						{
+							<li class="nav-item">
+								<a class="nav-link @(count==1 ?"active" : "")" href="#Agenda-@item.Id" data-toggle="pill">
+									Day-@count.ToString("D2")
+									
+									<span>@item.Date.ToString("dd MMMM yyyy")</span>
+								</a>
+							</li>
+							count++;
+						
+						
+						}	
+					</ul>
+				</div>
+
+
+
+				<div class="schedule-contents bg-schedule">
+					<div class="tab-content" id="pills-tabContent">
+						@{
+							var j = 0;
+						}
+						@foreach (var item in Model.Agenda)
+						{
+
+							<div class="tab-pane fade @(j ==0 ? "show active" : "") schedule-item" id="Agenda-@item.Id">
+								<!-- Headings -->
+								<ul class="m-0 p-0">
+									<li class="headings">
+										<div class="time">Time</div>
+										<div class="speaker">Speaker</div>
+										<div class="subject">Subject</div>
+									</li>
+
+									@foreach (var content in item.EventAgendaContents)
+									{
+										<!-- Schedule Details -->
+										<li class="schedule-details">
+											<div class="block">
+												<!-- time -->
+												<div class="time">
+													<i class="fa fa-clock-o"></i>
+													<span class="time">@content.StartTime</span>
+												</div>
+												<!-- Speaker -->
+												<div class="speaker">
+													<img src="~/@content.Speaker.ImgPath" alt="speaker-thumb-one" style="width:65px; height:65px">
+													<span class="name">@content.Speaker.Name</span>
+												</div>
+												<!-- Subject -->
+												<div class="subject" style="width:45%;">@content.Subject</div>
+												
+											</div>
+										</li>
+
+									}
+								</ul>
+							</div>
+
+							j++;
+						}
+					</div>
+				</div>
+
+
+
+				<div class="download-button text-center">
+					@if(Model.StartDate > DateTime.Now)
+					{
+						<a href="#" class="btn btn-main-md">Book Ticket</a>
+					}
+					
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
