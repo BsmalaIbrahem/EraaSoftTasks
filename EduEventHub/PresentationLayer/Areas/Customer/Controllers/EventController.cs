@@ -2,7 +2,9 @@
 using DataLayer.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using PresentationLayer.ViewModels;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace PresentationLayer.Areas.Customer.Controllers
 {
@@ -14,9 +16,12 @@ namespace PresentationLayer.Areas.Customer.Controllers
         {
             _eventRepository = eventRepository;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index(EventFilter? filter = null)
         {
-            return View();
+            var data = await _eventRepository.GetAllAsync(
+                orderBy: q => q.OrderByDescending(e => e.StartDate)
+                );
+            return View(data);
         }
 
         public async Task<IActionResult> Details(int id)

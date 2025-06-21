@@ -3,30 +3,6 @@
   "WorkspaceRootPath": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\areas\\customer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\areas\\customer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\areas\\customer\\views\\event\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\areas\\customer\\views\\event\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\areas\\customer\\views\\speaker\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\areas\\customer\\views\\speaker\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\datalayer\\seeders\\initialseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\seeders\\initialseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\datalayer\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\viewmodels\\speakerdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\viewmodels\\speakerdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\areas\\customer\\controllers\\speakercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\areas\\customer\\controllers\\speakercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,20 +11,24 @@
       "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\areas\\customer\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\datalayer\\models\\eventagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\eventagenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\areas\\customer\\views\\speaker\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\areas\\customer\\views\\speaker\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\datalayer\\models\\eventcontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\eventcontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\datalayer\\models\\speaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\speaker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\areas\\customer\\views\\contactus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\areas\\customer\\views\\contactus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\datalayer\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\viewmodels\\eventfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\viewmodels\\eventfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\viewmodels\\paginationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\viewmodels\\paginationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,160 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "PresentationLayer\\Areas\\Customer\\Views\\Home\\Index.cshtml",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "PresentationLayer\\Areas\\Customer\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAkwF4AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-21T19:54:30.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Views\\Event\\Details.cshtml",
-              "RelativeDocumentMoniker": "PresentationLayer\\Areas\\Customer\\Views\\Event\\Details.cshtml",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Views\\Event\\Details.cshtml",
-              "RelativeToolTip": "PresentationLayer\\Areas\\Customer\\Views\\Event\\Details.cshtml",
-              "ViewState": "AgIAACMAAAAAAAAAAAAkwDcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-21T19:29:25.357Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InitialSeeder.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Seeders\\InitialSeeder.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Seeders\\InitialSeeder.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Seeders\\InitialSeeder.cs",
-              "RelativeToolTip": "DataLayer\\Seeders\\InitialSeeder.cs",
-              "ViewState": "AgIAABMBAAAAAAAAAAAkwCABAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T19:21:48.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Views\\Speaker\\Details.cshtml",
-              "RelativeDocumentMoniker": "PresentationLayer\\Areas\\Customer\\Views\\Speaker\\Details.cshtml",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Views\\Speaker\\Details.cshtml",
-              "RelativeToolTip": "PresentationLayer\\Areas\\Customer\\Views\\Speaker\\Details.cshtml",
-              "ViewState": "AgIAABcAAAAAAAAAAAAIwGwAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-21T19:02:51.765Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SpeakerDetailsViewModel.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\ViewModels\\SpeakerDetailsViewModel.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\ViewModels\\SpeakerDetailsViewModel.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\ViewModels\\SpeakerDetailsViewModel.cs",
-              "RelativeToolTip": "PresentationLayer\\ViewModels\\SpeakerDetailsViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T19:00:28.458Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SpeakerController.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Controllers\\SpeakerController.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Areas\\Customer\\Controllers\\SpeakerController.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Controllers\\SpeakerController.cs",
-              "RelativeToolTip": "PresentationLayer\\Areas\\Customer\\Controllers\\SpeakerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T18:50:39.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EventContent.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Models\\EventContent.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Models\\EventContent.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Models\\EventContent.cs",
-              "RelativeToolTip": "DataLayer\\Models\\EventContent.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T17:27:25.43Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EventAgenda.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Models\\EventAgenda.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Models\\EventAgenda.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Models\\EventAgenda.cs",
-              "RelativeToolTip": "DataLayer\\Models\\EventAgenda.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T17:07:11.185Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Speaker.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Models\\Speaker.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Models\\Speaker.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Models\\Speaker.cs",
-              "RelativeToolTip": "DataLayer\\Models\\Speaker.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T16:47:18.766Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Event.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Models\\Event.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Models\\Event.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Models\\Event.cs",
-              "RelativeToolTip": "DataLayer\\Models\\Event.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T16:47:08.407Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "DataLayer\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAA7wCIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T16:45:50.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "EventController.cs",
               "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Controllers\\EventController.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\Areas\\Customer\\Controllers\\EventController.cs",
               "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Controllers\\EventController.cs",
               "RelativeToolTip": "PresentationLayer\\Areas\\Customer\\Controllers\\EventController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB0AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T12:51:15.861Z",
+              "WhenOpened": "2025-06-21T22:54:36.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Views\\Speaker\\Index.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer\\Areas\\Customer\\Views\\Speaker\\Index.cshtml",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Views\\Speaker\\Index.cshtml",
+              "RelativeToolTip": "PresentationLayer\\Areas\\Customer\\Views\\Speaker\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T21:40:27.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SpeakerController.cs",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Controllers\\SpeakerController.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Areas\\Customer\\Controllers\\SpeakerController.cs",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Controllers\\SpeakerController.cs",
+              "RelativeToolTip": "PresentationLayer\\Areas\\Customer\\Controllers\\SpeakerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T21:40:08.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Views\\ContactUs\\Index.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer\\Areas\\Customer\\Views\\ContactUs\\Index.cshtml",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Views\\ContactUs\\Index.cshtml",
+              "RelativeToolTip": "PresentationLayer\\Areas\\Customer\\Views\\ContactUs\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T21:36:14.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PresentationLayer\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAD8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T21:19:38.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EventFilter.cs",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\ViewModels\\EventFilter.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\ViewModels\\EventFilter.cs",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\ViewModels\\EventFilter.cs",
+              "RelativeToolTip": "PresentationLayer\\ViewModels\\EventFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T20:57:35.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PaginationVM.cs",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\ViewModels\\PaginationVM.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\ViewModels\\PaginationVM.cs",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\ViewModels\\PaginationVM.cs",
+              "RelativeToolTip": "PresentationLayer\\ViewModels\\PaginationVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T20:33:52.074Z",
               "EditorCaption": ""
             }
           ]

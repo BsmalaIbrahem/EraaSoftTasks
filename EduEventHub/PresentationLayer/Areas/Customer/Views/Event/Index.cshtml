@@ -1,0 +1,77 @@
+﻿@model IEnumerable<Event>
+
+<section class="page-title bg-title overlay-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<div class="title">
+					<h3 style="text-transform:capitalize;">Our Events</h3>
+				</div>
+				<ol class="breadcrumb p-0 m-0">
+					<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+					<li class="breadcrumb-item active">Events</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="news section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h3>Eventre <span class="alternate">Events</span></h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore dolore</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			@foreach (var item in Model)
+			{
+				<div class="col-lg-4 col-md-6 col-sm-8 col-10 m-auto">
+					<div class="blog-post">
+						<div class="post-thumb">
+							<a asp-controller="Event" asp-action="Details" asp-route-id="@item.Id">
+								<img src="~/@item.ImgPath" alt="post-image" class="img-fluid" style="width:100%; height:244.984px;">
+							</a>
+						</div>
+						<div class="post-content">
+							<div class="date">
+								<h4>@item.StartDate.Day<span>@item.StartDate.ToString("MMM")</span></h4>
+							</div>
+							<div class="post-title">
+								<h2><a asp-controller="Event" asp-action="Details" asp-route-id="@item.Id">@item.Title</a></h2>
+							</div>
+							<div class="post-meta">
+								<ul class="list-inline">
+									<li class="list-inline-item">
+
+										<a asp-controller="Event" asp-action="Details" asp-route-id="@item.Id">
+											<i class="fa fa-eye"></i> More Details
+										</a>
+									</li>
+
+									<li class="list-inline-item">
+										@if (item.StartDate >= DateTime.Now)
+										{
+											<a href="~/#"><i class="fa fa-ticket"></i> Book Ticket</a>
+										}
+										else
+										{
+											<span><i class="fa fa-exclamation"></i>Not Available</span>
+										}
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			}
+
+		</div>
+	</div>
+</section>
+
+

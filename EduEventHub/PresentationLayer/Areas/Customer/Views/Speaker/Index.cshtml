@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Speaker>
+
+<section class="page-title bg-title overlay-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<div class="title">
+					<h3>Speakers</h3>
+				</div>
+				<ol class="breadcrumb p-0 m-0">
+					<li class="breadcrumb-item"><a href="/">Home</a></li>
+					<li class="breadcrumb-item active">Speakers</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section speakers white">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<!-- Section Title -->
+				<div class="section-title">
+					<h3>Our <span class="alternate">Speakers!</span></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut labore</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+
+			@foreach (var item in Model)
+			{
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<!-- Speaker 1 -->
+					<div class="speaker-item">
+						<div class="image">
+							<a asp-controller="Speaker" asp-action="Details" asp-route-id="@item.Id">
+								<img src="~/@item.ImgPath" alt="speaker" class="img-fluid" style="height:244.984px">
+							</a>
+							<div class="primary-overlay"></div>
+							<div class="socials">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a href="~/#"><i class="fa fa-facebook"></i></a></li>
+									<li class="list-inline-item"><a href="~/#"><i class="fa fa-twitter"></i></a></li>
+									<li class="list-inline-item"><a href="~/#"><i class="fa fa-linkedin"></i></a></li>
+									<li class="list-inline-item"><a href="~/#"><i class="fa fa-pinterest"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content text-center">
+							<a asp-controller="Speaker" asp-action="Details" asp-route-id="@item.Id">
+								<h5>@item.Name</h5>
+								<p>@item.Specialization</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			}
+
+		</div>
+	</div>
+</section>

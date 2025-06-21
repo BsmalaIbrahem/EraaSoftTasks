@@ -16,9 +16,10 @@ namespace PresentationLayer.Areas.Customer.Controllers
             _repository = repository;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var data = await _repository.GetAllAsync(orderBy: q => q.OrderByDescending(x => x.Id));
+            return View(data);
         }
 
         public async Task<IActionResult> Details(int id)
