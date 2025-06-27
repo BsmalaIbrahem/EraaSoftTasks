@@ -2,7 +2,9 @@
 using DataLayer.Models;
 using DataLayer.Repository;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PresentationLayer.Helpers;
+using PresentationLayer.ViewModels;
 using System.Threading.Tasks;
 
 namespace PresentationLayer.Areas.Admin.Controllers
@@ -17,9 +19,10 @@ namespace PresentationLayer.Areas.Admin.Controllers
             _repository = speakerRepository;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index(PageFiltesVM filter)
         {
-            return View();
+            var data = await _repository.GetAllAsync(skip: filter.PageNumber - 1, take:filter.PageSize);
+            return View(data);
         }
 
         public IActionResult Details()
@@ -64,9 +67,15 @@ namespace PresentationLayer.Areas.Admin.Controllers
 
         public async Task<IActionResult> Edit(int id)
         {
-            var data = await _repository.GetOneAsync(x => x.Id == id);
+            var data = await _repository.GetOneAsync(x => x.Id == id, includeChain: e => e.Include(q => q.EventContents)
+                                                                                          .ThenInclude(q => q.EventAgenda)
+                                                                                          .ThenInclude(q => q.Event)
+                                                                                    );
             if (data == null)
                 return NotFound();
+
+            var events = data.EventContents.Select(x => x.EventAgenda.Event).Distinct().ToList();
+            ViewBag.Events = events;
             return View(data) ;
         }
 

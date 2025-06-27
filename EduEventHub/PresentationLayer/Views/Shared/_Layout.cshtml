@@ -26,6 +26,33 @@
     <!-- FAVICON -->
     <link href="~/assets/images/favicon.png" rel="shortcut icon">
 
+	  <style>
+    /* لمسات جمالية على حقل البحث */
+    .search-input {
+      border-radius: 50px;
+      padding-left: 1.25rem;
+      padding-right: 2.75rem; /* حيخلي مساحة للأيقونة */
+      transition: box-shadow .3s ease;
+    }
+    .search-input:focus {
+      box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+    }
+
+    /* وضع الأيقونة داخل الحقل */
+    .search-wrapper {
+      position: relative;
+      max-width: 300px;   /* لا يتجاوز هذا العرض */
+    }
+    .search-wrapper i {
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #6c757d;
+      pointer-events: none; /* تمنع ضغط المستخدم عليها */
+    }
+  </style>
+
 </head>
 
 
@@ -68,10 +95,15 @@
 						<a class="nav-link" asp-controller="ContactUs" asp-action="Index">Contact</a>
 					</li>
 				</ul>
-				<a href="~/#" class="ticket">
-					<img src="~/assets/images/icon/ticket.png" alt="ticket">
-					<span>Buy Ticket</span>
-				</a>
+
+
+					<form class="form-inline my-2 my-lg-0">
+						<div class="search-wrapper">
+							<input class="form-control search-input" type="search" placeholder="Search..." aria-label="Search">
+							<i class="fa fa-search fa-sm" style="cursor:pointer"></i>
+						</div>
+					</form>
+				
 			</div>
 		</div>
 	</nav>
@@ -148,7 +180,7 @@
 	<!-- SyoTimer -->
 	<script src="~/plugins/syotimer/jquery.syotimer.min.js"></script>
 	<!-- Google Mapl -->
-	<script src="~/https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
 	<script type="text/javascript" src="~/plugins/google-map/gmap.js"></script>
 	<!-- Custom Script -->
 	<script src="~/js/custom.js"></script>
