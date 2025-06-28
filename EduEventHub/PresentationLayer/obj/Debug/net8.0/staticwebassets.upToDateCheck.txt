@@ -179,6 +179,7 @@ wwwroot\assets\images\layouts\layout-fluid-light.png
 wwwroot\assets\images\layouts\layout-without-menu-light.png
 wwwroot\assets\images\layouts\layout-without-navbar-light.png
 wwwroot\assets\images\logo.png
+wwwroot\assets\images\news\f8295008-fe8e-4567-b706-e4176bb053e5.jpg
 wwwroot\assets\images\news\post-thumb-eight.jpg
 wwwroot\assets\images\news\post-thumb-five.jpg
 wwwroot\assets\images\news\post-thumb-four.jpg

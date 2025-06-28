@@ -257,6 +257,16 @@
                 <!-- / Navbar -->
                 <!-- Content wrapper -->
                 <div class="content-wrapper">
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                          <div class="col-md-6" style="margin:auto; margin-top:10px;">
+                            <div class="alert alert-success alert-dismissible" role="alert">
+                                @TempData["SuccessMessage"]
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        </div>
+                    }
+
                     @RenderBody()
                     <!-- Footer -->
                     <footer class="content-footer footer bg-footer-theme">

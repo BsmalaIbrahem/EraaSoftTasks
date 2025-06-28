@@ -10,6 +10,11 @@
                     <h5 class="mb-0">Event</h5>
                     <small class="text-muted float-end">Create</small>
                 </div>
+                
+                <div class="alert alert-danger alert-dismissible" asp-validation-summary="All" role="alert">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
                 <div class="card-body">
                     <form method="post" enctype="multipart/form-data">
                         <div class="mb-3">
@@ -73,7 +78,23 @@
                                             {
                                                 <div class="content-block border p-2 mb-2">
                                                     <label>Speaker ID</label>
-                                                    <input type="number" name="Agendas[@i].Contents[@j].SpeakerId" value="@Model.Agendas[i].Contents[j].SpeakerId" class="form-control" />
+                                                   
+
+                                                    <select class="form-select" name="Agendas[@i].Contents[@j].SpeakerId">
+                                                        
+                                                        @foreach (var speaker in ViewBag.Speakers)
+                                                        {
+                                                            if (speaker.Value == Model.Agendas[@i].Contents[@j].SpeakerId.ToString())
+                                                            {
+                                                                <option value="@speaker.Value" selected>@speaker.Text</option>
+                                                            }
+                                                            else
+                                                            {
+                                                                <option value="@speaker.Value">@speaker.Text</option>
+                                                            }
+                                                           
+                                                        }
+                                                    </select>
 
                                                     <label>Subject</label>
                                                     <input type="text" name="Agendas[@i].Contents[@j].Subject" value="@Model.Agendas[i].Contents[j].Subject" class="form-control" />

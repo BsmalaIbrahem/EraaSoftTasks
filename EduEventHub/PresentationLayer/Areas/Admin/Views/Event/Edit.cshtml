@@ -1,4 +1,4 @@
-﻿@model CreateEventVM
+﻿@model EditEventVM
 
 <div class="container-xxl flex-grow-1 container-p-y">
     <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Event /</span> Create</h4>
@@ -52,7 +52,7 @@
                         <div class="mb-3">
                             <label for="formFile" class="form-label">Image</label>
                             <input class="form-control" type="file" id="formFile" asp-for="ImgPath" onchange="previewImage(event)" />
-                            <img id="imagePreview" src="#" alt="Image Preview" class="img-thumbnail mt-2" style="display: none; max-height: 200px;" />
+                            <img id="imagePreview" src="~/@Model.ImgPath" alt="Image Preview" class="img-thumbnail mt-2" style="max-height: 200px;" />
                             <span class="text-danger" asp-validation-for="ImgPath"></span>
                         </div>
 
@@ -64,6 +64,7 @@
                             {
                                 for (int i = 0; i < Model.Agendas.Count; i++)
                                 {
+                                    <input hidden="" type="number" name="Agendas[@i].AgendaId" value="@Model.Agendas[i].AgendaId" />
                                     <div class="agenda-block border p-3 mb-3">
                                         <label class="form-label">Agenda Date</label>
                                         <input type="date" name="Agendas[@i].Date" value="@Model.Agendas[i].Date.ToString("yyyy-MM-dd")" class="form-control mb-2" />
@@ -71,9 +72,25 @@
                                         <div class="agenda-contents" id="contents-@i">
                                             @for (int j = 0; j < Model.Agendas[i].Contents.Count; j++)
                                             {
+                                                <input hidden="" type="number" name="Agendas[@i].Contents[@j].ContentId" value="@Model.Agendas[i].Contents[@j].ContentId" />
                                                 <div class="content-block border p-2 mb-2">
                                                     <label>Speaker ID</label>
-                                                    <input type="number" name="Agendas[@i].Contents[@j].SpeakerId" value="@Model.Agendas[i].Contents[j].SpeakerId" class="form-control" />
+
+                                                    <select class="form-select" name="Agendas[@i].Contents[@j].SpeakerId">
+
+                                                        @foreach (var speaker in ViewBag.Speakers)
+                                                        {
+                                                            if (speaker.Value == Model.Agendas[@i].Contents[@j].SpeakerId.ToString())
+                                                            {
+                                                                <option value="@speaker.Value" selected>@speaker.Text</option>
+                                                            }
+                                                            else
+                                                            {
+                                                                <option value="@speaker.Value">@speaker.Text</option>
+                                                            }
+
+                                                        }
+                                                    </select>
 
                                                     <label>Subject</label>
                                                     <input type="text" name="Agendas[@i].Contents[@j].Subject" value="@Model.Agendas[i].Contents[j].Subject" class="form-control" />

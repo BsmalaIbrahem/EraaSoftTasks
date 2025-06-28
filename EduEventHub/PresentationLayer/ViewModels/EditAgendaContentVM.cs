@@ -1,11 +1,10 @@
-﻿using DataLayer.Models;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace PresentationLayer.ViewModels
 {
-    public class CreateAgendaContentVM
+    public class EditAgendaContentVM
     {
+        public int ContentId { get; set; } = 0;
         [Required(ErrorMessage = "speaker is required.")]
         public int SpeakerId { get; set; }
         [Required(ErrorMessage = "Subject is required.")]
