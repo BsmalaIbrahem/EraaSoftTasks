@@ -17,6 +17,7 @@ namespace DataLayer.Repository
             Func<IQueryable<T>, IIncludableQueryable<T, object>>? includeChain = null,
             bool asNoTracking = false, int? skip = null, int? take = null,
             Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null);
+        Task<int> CountAsync(Expression<Func<T, bool>>? expression = null);
         Task AddAsync(T entity);
         Task UpdateAsync(T entity);
         Task DeleteAsync(Expression<Func<T, bool>> expression);

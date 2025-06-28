@@ -21,13 +21,19 @@ namespace PresentationLayer.Areas.Admin.Controllers
 
         public async Task<IActionResult> Index(PageFiltesVM filter)
         {
-            var data = await _repository.GetAllAsync(skip: filter.PageNumber - 1, take:filter.PageSize);
+            var items = await _repository.GetAllAsync(skip: filter.SkipNumber, take:filter.PageSize);
+            var count = await _repository.CountAsync();
+            var data = new ModelsWithPaginationVM<Speaker>()
+            {
+                Items = items.ToList(),
+                Pagination = new PaginationVM
+                {
+                    PageNumber = filter.PageNumber ?? 0,
+                    PageSize = filter.PageSize ?? 0,
+                    TotalCount = count
+                }
+            };
             return View(data);
-        }
-
-        public IActionResult Details()
-        {
-            return View();
         }
 
         public IActionResult Create()

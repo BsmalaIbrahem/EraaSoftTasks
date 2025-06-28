@@ -59,7 +59,17 @@ namespace DataLayer.Repository
             var data = await GetAllAsync(expression, includeChain: includeChain, asNoTracking: AsNoTracking);
             return data.FirstOrDefault();
         }
-        
+
+        public async Task<int> CountAsync(Expression<Func<T, bool>>? expression = null)
+        {
+            var query = _context.Set<T>().AsQueryable();
+            if (expression != null)
+            {
+                query = query.Where(expression);
+            }
+            return await  query.CountAsync();
+        }
+
         public async Task AddAsync(T entity)
         {
             try
@@ -106,6 +116,8 @@ namespace DataLayer.Repository
         {
             await _context.SaveChangesAsync();
         }
+
+        
     }
     
 }
