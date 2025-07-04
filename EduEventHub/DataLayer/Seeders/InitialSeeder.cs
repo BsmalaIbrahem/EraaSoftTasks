@@ -1,4 +1,6 @@
-﻿using DataLayer.Models;
+﻿using DataLayer.Data;
+using DataLayer.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
 
@@ -120,7 +122,7 @@ namespace DataLayer.Seeders
                 }
             );
 
-          
+
 
             modelBuilder.Entity<EventAgenda>().HasData(
                  new EventAgenda
@@ -302,6 +304,49 @@ namespace DataLayer.Seeders
                     SpeakerId = 5,
                     Platform = PlatForm.Twitter,
                     Url = "https://twitter.com/youssefsami"
+                }
+            );
+
+            modelBuilder.Entity<ApplicationUser>().HasData(
+                new ApplicationUser
+                {
+                    Id = "1",
+                    UserName = "SuperAdmin",
+                    NormalizedUserName = "SUPERADMIN",
+                    PasswordHash = new PasswordHasher<ApplicationUser>().HashPassword(null, "SuperAdmin123!"),
+                    Email = "super@gmail.com",
+                    NormalizedEmail = "super@gmail.com",
+                    EmailConfirmed = true,
+                    FirstName = "Super",
+                    LastName = "Admin",
+                });
+
+            modelBuilder.Entity<IdentityRole>().HasData(
+                new IdentityRole
+                {
+                    Id = "1",
+                    Name = "SuperAdmin",
+                    NormalizedName = "SUPERADMIN"
+                },
+                new IdentityRole
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    Name = "Admin",
+                    NormalizedName = "ADMIN"
+                },
+                new IdentityRole
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    Name = "User",
+                    NormalizedName = "USER"
+                }
+                );
+
+            modelBuilder.Entity<IdentityUserRole<string>>().HasData(
+                new IdentityUserRole<string>
+                {
+                    UserId = "1", 
+                    RoleId = "1" 
                 }
             );
         }

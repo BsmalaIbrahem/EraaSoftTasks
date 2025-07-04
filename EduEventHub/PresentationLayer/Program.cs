@@ -1,6 +1,9 @@
 using DataLayer.Data;
 using DataLayer.Repository;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
+using PresentationLayer.Utility;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +12,13 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MyConnection")));
-builder.Services.AddTransient(typeof(IRepository<>), typeof(MainRepository<>));
+builder.Services.AddScoped(typeof(IRepository<>), typeof(MainRepository<>));
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+{
+}).AddEntityFrameworkStores<ApplicationDbContext>()
+.AddDefaultTokenProviders();
+
+builder.Services.AddTransient<IEmailSender, EmailSender>();
 
 var app = builder.Build();
 

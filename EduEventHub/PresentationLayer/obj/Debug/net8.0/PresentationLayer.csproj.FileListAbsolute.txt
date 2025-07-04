@@ -284,3 +284,8 @@ E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\obj\Debug\net8.0\refint\Prese
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\obj\Debug\net8.0\PresentationLayer.pdb
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\obj\Debug\net8.0\PresentationLayer.genruntimeconfig.cache
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\obj\Debug\net8.0\ref\PresentationLayer.dll
+E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll

@@ -22,6 +22,99 @@ namespace DataLayer.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("DataLayer.Data.ApplicationUser", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasDatabaseName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasDatabaseName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "1",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "cc036481-d939-422c-9cce-7093dcbab6b5",
+                            Email = "super@gmail.com",
+                            EmailConfirmed = true,
+                            FirstName = "Super",
+                            LastName = "Admin",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "super@gmail.com",
+                            NormalizedUserName = "SUPERADMIN",
+                            PasswordHash = "AQAAAAIAAYagAAAAEN07ANF0L/oMzFzbB66DBwmhwFP+Qx2vImaZ/WjnckCiTVMZ5m5CwTO2ljtkaS8r2Q==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "ade5ebcb-e8db-492a-adc7-7e3b8e53119d",
+                            TwoFactorEnabled = false,
+                            UserName = "SuperAdmin"
+                        });
+                });
+
             modelBuilder.Entity("DataLayer.Models.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -60,52 +153,52 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 975, DateTimeKind.Utc).AddTicks(7209),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 389, DateTimeKind.Utc).AddTicks(5937),
                             Description = "Hands-on learning sessions",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Workshops",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 975, DateTimeKind.Utc).AddTicks(7214)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 389, DateTimeKind.Utc).AddTicks(5942)
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 975, DateTimeKind.Utc).AddTicks(7961),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 389, DateTimeKind.Utc).AddTicks(6708),
                             Description = "Educational talks by experts",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Lectures",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 975, DateTimeKind.Utc).AddTicks(7962)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 389, DateTimeKind.Utc).AddTicks(6709)
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 975, DateTimeKind.Utc).AddTicks(7964),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 389, DateTimeKind.Utc).AddTicks(6711),
                             Description = "Cultural and scientific displays",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Exhibitions",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 975, DateTimeKind.Utc).AddTicks(7964)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 389, DateTimeKind.Utc).AddTicks(6711)
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 975, DateTimeKind.Utc).AddTicks(8018),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 389, DateTimeKind.Utc).AddTicks(6792),
                             Description = "Multi-day events with multiple speakers",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Conferences",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 975, DateTimeKind.Utc).AddTicks(8018)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 389, DateTimeKind.Utc).AddTicks(6792)
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 975, DateTimeKind.Utc).AddTicks(8019),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 389, DateTimeKind.Utc).AddTicks(6794),
                             Description = "Focused discussions on specific topics",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Seminars",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 975, DateTimeKind.Utc).AddTicks(8020)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 389, DateTimeKind.Utc).AddTicks(6794)
                         });
                 });
 
@@ -167,7 +260,7 @@ namespace DataLayer.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(280),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(6227),
                             Description = "A hands-on workshop to learn Python programming from scratch.",
                             EndDate = new DateTime(2024, 10, 16, 16, 0, 0, 0, DateTimeKind.Utc),
                             ImgPath = "assets/images/gallery/gallery-less-eight.jpg",
@@ -176,13 +269,13 @@ namespace DataLayer.Migrations
                             Price = 50.0,
                             StartDate = new DateTime(2024, 10, 15, 10, 0, 0, 0, DateTimeKind.Utc),
                             Title = "Python Workshop",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(283)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(6227)
                         },
                         new
                         {
                             Id = 2,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(2272),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(7815),
                             Description = "Explore the future of artificial intelligence with leading experts.",
                             EndDate = new DateTime(2025, 1, 20, 17, 0, 0, 0, DateTimeKind.Utc),
                             ImgPath = "assets/images/gallery/gallery-full-seven.jpg",
@@ -191,13 +284,13 @@ namespace DataLayer.Migrations
                             Price = 30.0,
                             StartDate = new DateTime(2025, 1, 20, 14, 0, 0, 0, DateTimeKind.Utc),
                             Title = "AI Lecture Series",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(2272)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(7815)
                         },
                         new
                         {
                             Id = 3,
                             CategoryId = 3,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(2277),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(7821),
                             Description = "Showcasing the latest innovations in technology.",
                             EndDate = new DateTime(2025, 6, 12, 18, 0, 0, 0, DateTimeKind.Utc),
                             ImgPath = "assets/images/background/cta-ticket-bg.jpg",
@@ -206,13 +299,13 @@ namespace DataLayer.Migrations
                             Price = 20.0,
                             StartDate = new DateTime(2025, 6, 10, 9, 0, 0, 0, DateTimeKind.Utc),
                             Title = "Tech Exhibition 2025",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(2277)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(7822)
                         },
                         new
                         {
                             Id = 4,
                             CategoryId = 4,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(2280),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(7824),
                             Description = "A conference on cloud solutions and scalability.",
                             EndDate = new DateTime(2023, 11, 7, 17, 0, 0, 0, DateTimeKind.Utc),
                             ImgPath = "assets/images/background/homepage-one-banner.jpg",
@@ -221,13 +314,13 @@ namespace DataLayer.Migrations
                             Price = 100.0,
                             StartDate = new DateTime(2023, 11, 5, 9, 0, 0, 0, DateTimeKind.Utc),
                             Title = "Cloud Computing Conference",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(2280)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(7825)
                         },
                         new
                         {
                             Id = 5,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(2282),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(7827),
                             Description = "Learn about the latest trends in cybersecurity.",
                             EndDate = new DateTime(2026, 3, 15, 15, 0, 0, 0, DateTimeKind.Utc),
                             ImgPath = "assets/images/background/timer-bg.jpg",
@@ -236,7 +329,7 @@ namespace DataLayer.Migrations
                             Price = 40.0,
                             StartDate = new DateTime(2026, 3, 15, 10, 0, 0, 0, DateTimeKind.Utc),
                             Title = "Cybersecurity Seminar",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(2283)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(7827)
                         });
                 });
 
@@ -279,72 +372,72 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(3297),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(8689),
                             Date = new DateTime(2024, 10, 15, 0, 0, 0, 0, DateTimeKind.Utc),
                             EventId = 1,
                             IsActive = true,
                             IsDeleted = false,
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(3297)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(8690)
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(3881),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(9157),
                             Date = new DateTime(2024, 10, 16, 0, 0, 0, 0, DateTimeKind.Utc),
                             EventId = 1,
                             IsActive = true,
                             IsDeleted = false,
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(3881)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(9157)
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(3885),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(9160),
                             Date = new DateTime(2025, 1, 20, 0, 0, 0, 0, DateTimeKind.Utc),
                             EventId = 2,
                             IsActive = true,
                             IsDeleted = false,
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(3885)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(9160)
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(3889),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(9162),
                             Date = new DateTime(2025, 6, 10, 0, 0, 0, 0, DateTimeKind.Utc),
                             EventId = 3,
                             IsActive = true,
                             IsDeleted = false,
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(3889)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(9163)
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(3892),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(9187),
                             Date = new DateTime(2025, 6, 11, 0, 0, 0, 0, DateTimeKind.Utc),
                             EventId = 3,
                             IsActive = true,
                             IsDeleted = false,
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(3892)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(9188)
                         },
                         new
                         {
                             Id = 6,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(3895),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(9189),
                             Date = new DateTime(2023, 11, 5, 0, 0, 0, 0, DateTimeKind.Utc),
                             EventId = 4,
                             IsActive = true,
                             IsDeleted = false,
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(3895)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(9190)
                         },
                         new
                         {
                             Id = 7,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(3898),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(9191),
                             Date = new DateTime(2026, 3, 15, 0, 0, 0, 0, DateTimeKind.Utc),
                             EventId = 5,
                             IsActive = true,
                             IsDeleted = false,
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(3898)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(9191)
                         });
                 });
 
@@ -396,134 +489,134 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(4522),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(9775),
                             EventAgendaId = 1,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 1,
                             StartTime = new TimeOnly(10, 0, 0),
                             Subject = "Introduction to Python Programming",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(4522)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(9776)
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(5399),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(741),
                             EventAgendaId = 1,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 3,
                             StartTime = new TimeOnly(14, 0, 0),
                             Subject = "Python for Data Science",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(5400)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(742)
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(5402),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(745),
                             EventAgendaId = 2,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 1,
                             StartTime = new TimeOnly(11, 0, 0),
                             Subject = "Advanced Python Techniques",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(5403)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(745)
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(5404),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(747),
                             EventAgendaId = 3,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 2,
                             StartTime = new TimeOnly(14, 0, 0),
                             Subject = "Machine Learning Fundamentals",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(5404)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(747)
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(5405),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(748),
                             EventAgendaId = 3,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 4,
                             StartTime = new TimeOnly(16, 0, 0),
                             Subject = "AI in Cloud Computing",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(5405)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(748)
                         },
                         new
                         {
                             Id = 6,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(5407),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(750),
                             EventAgendaId = 4,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 1,
                             StartTime = new TimeOnly(9, 30, 0),
                             Subject = "Innovations in Software Development",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(5407)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(750)
                         },
                         new
                         {
                             Id = 7,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(5408),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(751),
                             EventAgendaId = 4,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 2,
                             StartTime = new TimeOnly(13, 0, 0),
                             Subject = "AI-Powered Innovations",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(5408)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(751)
                         },
                         new
                         {
                             Id = 8,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(5409),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(752),
                             EventAgendaId = 5,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 4,
                             StartTime = new TimeOnly(10, 0, 0),
                             Subject = "Cloud Solutions Showcase",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(5410)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(753)
                         },
                         new
                         {
                             Id = 9,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(5411),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(754),
                             EventAgendaId = 6,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 4,
                             StartTime = new TimeOnly(9, 0, 0),
                             Subject = "Scalable Cloud Architectures",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(5411)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(754)
                         },
                         new
                         {
                             Id = 10,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(5413),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(755),
                             EventAgendaId = 6,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 5,
                             StartTime = new TimeOnly(11, 30, 0),
                             Subject = "Securing Cloud Infrastructure",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(5413)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(755)
                         },
                         new
                         {
                             Id = 11,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(5414),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(756),
                             EventAgendaId = 7,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 5,
                             StartTime = new TimeOnly(10, 0, 0),
                             Subject = "Ethical Hacking Techniques",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(5414)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(757)
                         });
                 });
 
@@ -574,61 +667,61 @@ namespace DataLayer.Migrations
                         {
                             Id = 1,
                             Bio = "Software engineering expert with over 10 years of experience.",
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 976, DateTimeKind.Utc).AddTicks(4526),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(3646),
                             ImgPath = "assets/images/speakers/single-speaker.jpg",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Ahmed Khaled",
                             Specialization = "Software Development",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 976, DateTimeKind.Utc).AddTicks(4526)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(3648)
                         },
                         new
                         {
                             Id = 2,
                             Bio = "Data science enthusiast and AI researcher.",
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 976, DateTimeKind.Utc).AddTicks(6480),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(4599),
                             ImgPath = "assets/images/speakers/speaker-five.jpg",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Mohamed Ali",
                             Specialization = "Data Science",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 976, DateTimeKind.Utc).AddTicks(6481)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(4599)
                         },
                         new
                         {
                             Id = 3,
                             Bio = "Specialist in educational workshops with a focus on interactive learning.",
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 976, DateTimeKind.Utc).AddTicks(6485),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(4602),
                             ImgPath = "assets/images/speakers/speaker-full-five.jpg",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Omar Mostafa",
                             Specialization = "Education",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 976, DateTimeKind.Utc).AddTicks(6485)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(4602)
                         },
                         new
                         {
                             Id = 4,
                             Bio = "Expert in cloud computing and distributed systems.",
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 976, DateTimeKind.Utc).AddTicks(6487),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(4604),
                             ImgPath = "assets/images/speakers/speaker-full-one.jpg",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Hassan Ibrahim",
                             Specialization = "Cloud Computing",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 976, DateTimeKind.Utc).AddTicks(6487)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(4604)
                         },
                         new
                         {
                             Id = 5,
                             Bio = "Cybersecurity specialist with a focus on ethical hacking.",
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 976, DateTimeKind.Utc).AddTicks(6488),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(4606),
                             ImgPath = "assets/images/speakers/speaker-full-three.jpg",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Youssef Sami",
                             Specialization = "Cybersecurity",
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 976, DateTimeKind.Utc).AddTicks(6488)
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 390, DateTimeKind.Utc).AddTicks(4606)
                         });
                 });
 
@@ -675,69 +768,229 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(6052),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(1470),
                             IsActive = true,
                             IsDeleted = false,
                             Platform = 2,
                             SpeakerId = 1,
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(6052),
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(1470),
                             Url = "https://linkedin.com/in/ahmedkhaled"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(6693),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(2144),
                             IsActive = true,
                             IsDeleted = false,
                             Platform = 1,
                             SpeakerId = 1,
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(6694),
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(2144),
                             Url = "https://twitter.com/ahmedkhaled"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(6696),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(2147),
                             IsActive = true,
                             IsDeleted = false,
                             Platform = 1,
                             SpeakerId = 2,
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(6696),
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(2147),
                             Url = "https://twitter.com/mohamedali"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(6760),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(2149),
                             IsActive = true,
                             IsDeleted = false,
                             Platform = 3,
                             SpeakerId = 3,
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(6761),
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(2149),
                             Url = "https://instagram.com/omarmostafa"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(6763),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(2151),
                             IsActive = true,
                             IsDeleted = false,
                             Platform = 2,
                             SpeakerId = 4,
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(6763),
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(2151),
                             Url = "https://linkedin.com/in/hassanibrahim"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(6765),
+                            CreatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(2153),
                             IsActive = true,
                             IsDeleted = false,
                             Platform = 1,
                             SpeakerId = 5,
-                            UpdatedAt = new DateTime(2025, 6, 21, 16, 48, 10, 977, DateTimeKind.Utc).AddTicks(6765),
+                            UpdatedAt = new DateTime(2025, 7, 4, 3, 38, 42, 391, DateTimeKind.Utc).AddTicks(2153),
                             Url = "https://twitter.com/youssefsami"
                         });
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "1",
+                            Name = "SuperAdmin",
+                            NormalizedName = "SUPERADMIN"
+                        },
+                        new
+                        {
+                            Id = "54b49ba7-b79b-4c0d-a01c-154967ad67db",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        },
+                        new
+                        {
+                            Id = "8856e5f5-16b1-4e7a-863e-471bbff84697",
+                            Name = "User",
+                            NormalizedName = "USER"
+                        });
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RoleId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetRoleClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderKey")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderDisplayName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("RoleId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = "1",
+                            RoleId = "1"
+                        });
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("AspNetUserTokens", (string)null);
                 });
 
             modelBuilder.Entity("DataLayer.Models.Event", b =>
@@ -753,11 +1006,13 @@ namespace DataLayer.Migrations
 
             modelBuilder.Entity("DataLayer.Models.EventAgenda", b =>
                 {
-                    b.HasOne("DataLayer.Models.Event", null)
+                    b.HasOne("DataLayer.Models.Event", "Event")
                         .WithMany("Agenda")
                         .HasForeignKey("EventId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Event");
                 });
 
             modelBuilder.Entity("DataLayer.Models.EventContent", b =>
@@ -784,6 +1039,57 @@ namespace DataLayer.Migrations
                     b.HasOne("DataLayer.Models.Speaker", null)
                         .WithMany("SocialMedias")
                         .HasForeignKey("SpeakerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.HasOne("DataLayer.Data.ApplicationUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.HasOne("DataLayer.Data.ApplicationUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DataLayer.Data.ApplicationUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.HasOne("DataLayer.Data.ApplicationUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
