@@ -1,6 +1,7 @@
 ﻿using DataLayer.Data;
 using DataLayer.Models;
 using DataLayer.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PresentationLayer.Helpers;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 namespace PresentationLayer.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize]
     public class SpeakerController : Controller
     {
         private readonly IRepository<Speaker> _repository;

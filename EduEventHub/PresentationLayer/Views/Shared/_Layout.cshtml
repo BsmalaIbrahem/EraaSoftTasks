@@ -96,14 +96,16 @@
 					</li>
 				</ul>
 
+      
+				@if (User is not null && User.Identity.IsAuthenticated)
+				{
+					<a class="btn btn-primary d-none d-lg-block" asp-controller="Account" asp-area="Identity" asp-action="Logout">Logout</a>
+				}
+				else
+				{
+					<a class="btn btn-primary d-none d-lg-block" asp-controller="Account" asp-area="Identity" asp-action="Login">Login</a>
+                }
 
-					<form class="form-inline my-2 my-lg-0">
-						<div class="search-wrapper">
-							<input class="form-control search-input" type="search" placeholder="Search..." aria-label="Search">
-							<i class="fa fa-search fa-sm" style="cursor:pointer"></i>
-						</div>
-					</form>
-				
 			</div>
 		</div>
 	</nav>

@@ -9,6 +9,7 @@ namespace DataLayer.Models
 {
     public class EventContent : BaseModel
     {
+        public int Id { get; set; }
         public int EventAgendaId { get; set; }
         [ForeignKey(nameof(EventAgendaId))]
         public EventAgenda EventAgenda { get; set; } = null!;

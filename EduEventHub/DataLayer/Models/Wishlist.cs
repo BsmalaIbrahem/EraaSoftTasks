@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DataLayer.Data;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -7,13 +9,14 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Models
 {
-    public class EventAgenda : BaseModel
+    [PrimaryKey(nameof(UserId), nameof(EventId))]
+    public class Wishlist : BaseModel
     {
-        public int Id { get; set; }
+        public string UserId { get; set; } = string.Empty;
+        [ForeignKey(nameof(UserId))]
+        public ApplicationUser User { get; set; } = null!;
         public int EventId { get; set; }
         [ForeignKey(nameof(EventId))]
         public Event Event { get; set; } = null!;
-        public DateTime Date { get; set; } = DateTime.UtcNow;
-        public ICollection<EventContent> EventAgendaContents { get; set; } = new List<EventContent>();
     }
 }

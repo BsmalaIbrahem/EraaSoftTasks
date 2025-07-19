@@ -179,6 +179,7 @@ wwwroot\assets\images\layouts\layout-fluid-light.png
 wwwroot\assets\images\layouts\layout-without-menu-light.png
 wwwroot\assets\images\layouts\layout-without-navbar-light.png
 wwwroot\assets\images\logo.png
+wwwroot\assets\images\news\97cbd4d4-8953-4303-bff6-441b87dc0ac8.PNG
 wwwroot\assets\images\news\f8295008-fe8e-4567-b706-e4176bb053e5.jpg
 wwwroot\assets\images\news\post-thumb-eight.jpg
 wwwroot\assets\images\news\post-thumb-five.jpg
@@ -198,6 +199,7 @@ wwwroot\assets\images\news\post-thumb-sm-two.jpg
 wwwroot\assets\images\news\post-thumb-three.jpg
 wwwroot\assets\images\news\post-thumb-two.jpg
 wwwroot\assets\images\news\single-post.jpg
+wwwroot\assets\images\speakers\0605b470-195f-4339-9442-b9c335226c42.PNG
 wwwroot\assets\images\speakers\featured-speaker.jpg
 wwwroot\assets\images\speakers\featured-speaker-two.jpg
 wwwroot\assets\images\speakers\single-speaker.jpg

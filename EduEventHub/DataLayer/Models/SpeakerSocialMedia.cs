@@ -9,6 +9,7 @@ namespace DataLayer.Models
 {
     public class SpeakerSocialMedia : BaseModel
     {
+        public int Id { get; set; }
         public int SpeakerId { get; set; }
         [ForeignKey(nameof(SpeakerId))]
         [NotMapped]
