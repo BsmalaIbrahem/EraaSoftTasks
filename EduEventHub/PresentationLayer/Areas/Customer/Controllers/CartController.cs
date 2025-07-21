@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 namespace PresentationLayer.Areas.Customer.Controllers
 {
     [Authorize]
+    [Area("Customer")]
     public class CartController : Controller
     {
         private readonly IRepository<Cart> _repository;

@@ -12,6 +12,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MyConnection")));
+
 builder.Services.AddScoped(typeof(IRepository<>), typeof(MainRepository<>));
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 {
@@ -19,6 +20,14 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 .AddDefaultTokenProviders();
 
 builder.Services.AddTransient<IEmailSender, EmailSender>();
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Identity/Account/Login";
+    options.AccessDeniedPath = "/Identity/Account/AccessDenied";
+});
+
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 

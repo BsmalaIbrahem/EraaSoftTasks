@@ -53,9 +53,9 @@
 									</li>
 
 									<li class="list-inline-item">
-										@if (item.StartDate >= DateTime.Now)
+										@if (item.EndDate >= DateTime.Now)
 										{
-											<a href="~/#"><i class="fa fa-ticket"></i> Book Ticket</a>
+											<a href="#" class="add-to-cart-btn" data-event-id="@item.Id" data-count="1"><i class="fa fa-ticket"></i>Add To Cart</a>
 										}
 										else
 										{
@@ -73,5 +73,44 @@
 		</div>
 	</div>
 </section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+		$(document).ready(function () {
+		$('.add-to-cart-btn').on('click', function (e) {
+			e.preventDefault();
+
+			const eventId = $(this).data('event-id');
+			const count = $(this).data('count');
+
+			$.ajax({
+				url: '/Customer/Cart/Add',
+				type: 'POST',
+				data: {
+					EventId: eventId,
+					Count: count
+				},
+				success: function (response) {
+					if (response.success) {
+						alert(response.message);
+						location.reload();
+					} else {
+						alert(response.message);
+					}
+				},
+				error: function (xhr) {
+					if (xhr.status === 401) {
+						// لو المستخدم مش مسجل دخول
+						window.location.href = '/Identity/Account/Login';
+					} else {
+						alert('حدث خطأ أثناء إضافة التذكرة.');
+					}
+				}
+			});
+		});
+	});
+
+</script>
+
 
 

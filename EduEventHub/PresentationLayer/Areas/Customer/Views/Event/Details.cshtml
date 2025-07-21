@@ -46,9 +46,9 @@
 						<div>
 							
 							<div class="">
-								@if (Model.StartDate > DateTime.Now)
+								@if (Model.EndDate > DateTime.Now)
 								{
-									<a href="#" class="btn btn-main-sm">Book Ticket</a>
+									<a href="#" class="btn btn-main-sm add-to-cart-btn" data-event-id="@Model.Id" data-count="1">Add To Cart</a>
 								}
 								else
 								{
@@ -153,9 +153,9 @@
 
 
 				<div class="download-button text-center">
-					@if(Model.StartDate > DateTime.Now)
+					@if(Model.EndDate > DateTime.Now)
 					{
-						<a href="#" class="btn btn-main-md">Book Ticket</a>
+						<a href="#" class="btn btn-main-sm add-to-cart-btn" data-event-id="@Model.Id" data-count="1">Add To Cart</a>
 					}
 					else
 					{
@@ -168,3 +168,42 @@
 		</div>
 	</div>
 </section>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+		$(document).ready(function () {
+		$('.add-to-cart-btn').on('click', function (e) {
+			e.preventDefault();
+
+			const eventId = $(this).data('event-id');
+			const count = $(this).data('count');
+
+			$.ajax({
+				url: '/Customer/Cart/Add',
+				type: 'POST',
+				data: {
+					EventId: eventId,
+					Count: count
+				},
+				success: function (response) {
+					if (response.success) {
+						alert(response.message);
+						location.reload();
+					} else {
+						alert(response.message);
+					}
+				},
+				error: function (xhr) {
+					if (xhr.status === 401) {
+						// لو المستخدم مش مسجل دخول
+						window.location.href = '/Identity/Account/Login';
+					} else {
+						alert('حدث خطأ أثناء إضافة التذكرة.');
+					}
+				}
+			});
+		});
+	});
+
+</script>

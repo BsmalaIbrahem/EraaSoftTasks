@@ -96,15 +96,21 @@
 					</li>
 				</ul>
 
-      
+				
 				@if (User is not null && User.Identity.IsAuthenticated)
 				{
-					<a class="btn btn-primary d-none d-lg-block" asp-controller="Account" asp-area="Identity" asp-action="Logout">Logout</a>
+					<a asp-controller="Cart" asp-action="Index" style="font-weight:bold; color:#00000099; font-size:20px;">
+						<i class="fa fa-cart-arrow-down" aria-hidden="true"></i> @await Component.InvokeAsync("CartCount")
+						</a>
+					<a  style="margin-left:20px;color:#ff6600; font-size:30px;" asp-controller="Account" asp-area="Identity" asp-action="Logout">
+						<i class="fa fa-sign-out" aria-hidden="true"></i>
+					</a>
 				}
 				else
 				{
-					<a class="btn btn-primary d-none d-lg-block" asp-controller="Account" asp-area="Identity" asp-action="Login">Login</a>
-                }
+					<a class="btn btn-primary d-none d-lg-block" style="background-color:#ff6600; border-color:#ff6600;" asp-controller="Account" asp-area="Identity" asp-action="Login">Login</a>
+				}
+				
 
 			</div>
 		</div>
