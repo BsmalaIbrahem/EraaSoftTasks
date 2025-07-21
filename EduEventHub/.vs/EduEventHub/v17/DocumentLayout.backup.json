@@ -3,52 +3,36 @@
   "WorkspaceRootPath": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\areas\\identity\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\areas\\identity\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Migrations\\20250721120409_OrderTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataLayer\\Migrations\\20250721120409_OrderTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\areas\\identity\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\areas\\identity\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\datalayer\\models\\eventorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\eventorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\areas\\identity\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\areas\\identity\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\utility\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\utility\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\areas\\identity\\views\\account\\confirmemailpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\areas\\identity\\views\\account\\confirmemailpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\datalayer\\seeders\\initialseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\seeders\\initialseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Migrations\\20250704024440_SeedSuperAdminData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataLayer\\Migrations\\20250704024440_SeedSuperAdminData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\datalayer\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\datalayer\\data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\utility\\stripesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\utility\\stripesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\datalayer\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52E95AF7-A801-4604-A87A-472C0D257E91}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|e:\\c#\\errasoft\\tasks\\edueventhub\\presentationlayer\\areas\\customer\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64FFC4C1-FB89-49B0-ADDF-DB586C6659D2}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\areas\\customer\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,162 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ConfirmEmailPage.cshtml",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Identity\\Views\\Account\\ConfirmEmailPage.cshtml",
-              "RelativeDocumentMoniker": "PresentationLayer\\Areas\\Identity\\Views\\Account\\ConfirmEmailPage.cshtml",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Identity\\Views\\Account\\ConfirmEmailPage.cshtml",
-              "RelativeToolTip": "PresentationLayer\\Areas\\Identity\\Views\\Account\\ConfirmEmailPage.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T04:07:29.102Z",
+              "DocumentIndex": 0,
+              "Title": "20250721120409_OrderTables.cs",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Migrations\\20250721120409_OrderTables.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Migrations\\20250721120409_OrderTables.cs",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Migrations\\20250721120409_OrderTables.cs",
+              "RelativeToolTip": "DataLayer\\Migrations\\20250721120409_OrderTables.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T12:04:09.984Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Identity\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "PresentationLayer\\Areas\\Identity\\Views\\Account\\Login.cshtml",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Identity\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "PresentationLayer\\Areas\\Identity\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAAAGoAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T03:26:40.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginVM.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\ViewModels\\LoginVM.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\ViewModels\\LoginVM.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\ViewModels\\LoginVM.cs",
-              "RelativeToolTip": "PresentationLayer\\ViewModels\\LoginVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA6AAAAAAAAAA==",
+              "Title": "EventOrder.cs",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Models\\EventOrder.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\EventOrder.cs",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Models\\EventOrder.cs",
+              "RelativeToolTip": "DataLayer\\Models\\EventOrder.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:19:05.089Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EmailSender.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Utility\\EmailSender.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Utility\\EmailSender.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Utility\\EmailSender.cs",
-              "RelativeToolTip": "PresentationLayer\\Utility\\EmailSender.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAwwBgAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T03:06:02.248Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegisterVM.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\ViewModels\\RegisterVM.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\ViewModels\\RegisterVM.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\ViewModels\\RegisterVM.cs",
-              "RelativeToolTip": "PresentationLayer\\ViewModels\\RegisterVM.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA1wBQAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:51:43.359Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Identity\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "PresentationLayer\\Areas\\Identity\\Views\\Account\\Register.cshtml",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Identity\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "PresentationLayer\\Areas\\Identity\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAAAG0AAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T02:46:31.199Z",
+              "WhenOpened": "2025-07-21T11:44:32.652Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Identity\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Areas\\Identity\\Controllers\\AccountController.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Identity\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "PresentationLayer\\Areas\\Identity\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAADwvywAAAAOAAAAAAAAAA==",
+              "Title": "Order.cs",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\Order.cs",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Models\\Order.cs",
+              "RelativeToolTip": "DataLayer\\Models\\Order.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:45:37.736Z",
+              "WhenOpened": "2025-07-21T11:43:24.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "20250704024440_SeedSuperAdminData.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Migrations\\20250704024440_SeedSuperAdminData.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Migrations\\20250704024440_SeedSuperAdminData.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Migrations\\20250704024440_SeedSuperAdminData.cs",
-              "RelativeToolTip": "DataLayer\\Migrations\\20250704024440_SeedSuperAdminData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:44:40.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "InitialSeeder.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Seeders\\InitialSeeder.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Seeders\\InitialSeeder.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Seeders\\InitialSeeder.cs",
-              "RelativeToolTip": "DataLayer\\Seeders\\InitialSeeder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:34:07.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Program.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\Program.cs",
               "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Program.cs",
               "RelativeToolTip": "PresentationLayer\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:28:17.438Z",
+              "WhenOpened": "2025-07-21T11:28:33.845Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "DataLayer\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "StripeSettings.cs",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Utility\\StripeSettings.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Utility\\StripeSettings.cs",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Utility\\StripeSettings.cs",
+              "RelativeToolTip": "PresentationLayer\\Utility\\StripeSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:25:19.47Z",
+              "WhenOpened": "2025-07-21T11:27:54.259Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Data\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Data\\ApplicationUser.cs",
-              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\DataLayer\\Data\\ApplicationUser.cs",
-              "RelativeToolTip": "DataLayer\\Data\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\appsettings.json",
+              "RelativeDocumentMoniker": "PresentationLayer\\appsettings.json",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\appsettings.json",
+              "RelativeToolTip": "PresentationLayer\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-21T11:27:05.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Areas\\Customer\\Controllers\\CartController.cs",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Controllers\\CartController.cs",
+              "RelativeToolTip": "PresentationLayer\\Areas\\Customer\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T02:25:45.792Z",
+              "WhenOpened": "2025-07-21T10:12:36.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer\\Areas\\Customer\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "E:\\C#\\ErraSoft\\Tasks\\EduEventHub\\PresentationLayer\\Areas\\Customer\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "PresentationLayer\\Areas\\Customer\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-21T09:41:05.593Z",
               "EditorCaption": ""
             }
           ]
