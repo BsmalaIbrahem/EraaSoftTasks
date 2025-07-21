@@ -29,6 +29,7 @@ namespace DataLayer.Data
         public DbSet<SpeakerSocialMedia> SpeakerSocialMedias { get; set; }
         public DbSet<EventAgenda> EventAgendas { get; set; }
         public DbSet<Wishlist> Wishlists { get; set; }
+        public DbSet<Cart> Carts { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

@@ -4,6 +4,7 @@ using DataLayer.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataLayer.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250721064334_CartModel")]
+    partial class CartModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -99,7 +102,7 @@ namespace DataLayer.Migrations
                         {
                             Id = "1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "f59ededa-7503-40b1-b71a-e39a2efbf128",
+                            ConcurrencyStamp = "c4ecd34a-da0a-42e6-a548-9e990c6e0435",
                             Email = "super@gmail.com",
                             EmailConfirmed = true,
                             FirstName = "Super",
@@ -107,9 +110,9 @@ namespace DataLayer.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "super@gmail.com",
                             NormalizedUserName = "SUPERADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEJuzfg5QBdCHZNg2H+ltO3UDoLklNqicJ4Xg4azzXTXXoHvE/xKKcnN3DQqIf6p0EQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEAMqj4hWl7Xr3P+h4AuxNd06YUgUTiWYyZaMHPjyIRTinoeppZbtBLpwFxbTgzgyHw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d40b2052-3825-4c88-8e39-53f6079d968f",
+                            SecurityStamp = "78f7d23e-1caa-48b8-be86-c0f7d69f4967",
                             TwoFactorEnabled = false,
                             UserName = "SuperAdmin"
                         });
@@ -186,52 +189,52 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 521, DateTimeKind.Utc).AddTicks(6869),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 529, DateTimeKind.Utc).AddTicks(5566),
                             Description = "Hands-on learning sessions",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Workshops",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 521, DateTimeKind.Utc).AddTicks(6873)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 529, DateTimeKind.Utc).AddTicks(5569)
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 521, DateTimeKind.Utc).AddTicks(7751),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 529, DateTimeKind.Utc).AddTicks(6265),
                             Description = "Educational talks by experts",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Lectures",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 521, DateTimeKind.Utc).AddTicks(7752)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 529, DateTimeKind.Utc).AddTicks(6266)
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 521, DateTimeKind.Utc).AddTicks(7754),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 529, DateTimeKind.Utc).AddTicks(6267),
                             Description = "Cultural and scientific displays",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Exhibitions",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 521, DateTimeKind.Utc).AddTicks(7754)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 529, DateTimeKind.Utc).AddTicks(6267)
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 521, DateTimeKind.Utc).AddTicks(7755),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 529, DateTimeKind.Utc).AddTicks(6268),
                             Description = "Multi-day events with multiple speakers",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Conferences",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 521, DateTimeKind.Utc).AddTicks(7755)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 529, DateTimeKind.Utc).AddTicks(6268)
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 521, DateTimeKind.Utc).AddTicks(7756),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 529, DateTimeKind.Utc).AddTicks(6269),
                             Description = "Focused discussions on specific topics",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Seminars",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 521, DateTimeKind.Utc).AddTicks(7756)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 529, DateTimeKind.Utc).AddTicks(6269)
                         });
                 });
 
@@ -242,9 +245,6 @@ namespace DataLayer.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("AvailableTickets")
-                        .HasColumnType("int");
 
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
@@ -295,9 +295,8 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 1,
-                            AvailableTickets = 0,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 522, DateTimeKind.Utc).AddTicks(8353),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(5062),
                             Description = "A hands-on workshop to learn Python programming from scratch.",
                             EndDate = new DateTime(2024, 10, 16, 16, 0, 0, 0, DateTimeKind.Utc),
                             ImgPath = "assets/images/gallery/gallery-less-eight.jpg",
@@ -306,14 +305,13 @@ namespace DataLayer.Migrations
                             Price = 50.0,
                             StartDate = new DateTime(2024, 10, 15, 10, 0, 0, 0, DateTimeKind.Utc),
                             Title = "Python Workshop",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 522, DateTimeKind.Utc).AddTicks(8354)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(5063)
                         },
                         new
                         {
                             Id = 2,
-                            AvailableTickets = 0,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(343),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(6899),
                             Description = "Explore the future of artificial intelligence with leading experts.",
                             EndDate = new DateTime(2025, 1, 20, 17, 0, 0, 0, DateTimeKind.Utc),
                             ImgPath = "assets/images/gallery/gallery-full-seven.jpg",
@@ -322,14 +320,13 @@ namespace DataLayer.Migrations
                             Price = 30.0,
                             StartDate = new DateTime(2025, 1, 20, 14, 0, 0, 0, DateTimeKind.Utc),
                             Title = "AI Lecture Series",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(343)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(6899)
                         },
                         new
                         {
                             Id = 3,
-                            AvailableTickets = 0,
                             CategoryId = 3,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(365),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(6904),
                             Description = "Showcasing the latest innovations in technology.",
                             EndDate = new DateTime(2025, 6, 12, 18, 0, 0, 0, DateTimeKind.Utc),
                             ImgPath = "assets/images/background/cta-ticket-bg.jpg",
@@ -338,14 +335,13 @@ namespace DataLayer.Migrations
                             Price = 20.0,
                             StartDate = new DateTime(2025, 6, 10, 9, 0, 0, 0, DateTimeKind.Utc),
                             Title = "Tech Exhibition 2025",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(365)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(6904)
                         },
                         new
                         {
                             Id = 4,
-                            AvailableTickets = 0,
                             CategoryId = 4,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(369),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(6906),
                             Description = "A conference on cloud solutions and scalability.",
                             EndDate = new DateTime(2023, 11, 7, 17, 0, 0, 0, DateTimeKind.Utc),
                             ImgPath = "assets/images/background/homepage-one-banner.jpg",
@@ -354,14 +350,13 @@ namespace DataLayer.Migrations
                             Price = 100.0,
                             StartDate = new DateTime(2023, 11, 5, 9, 0, 0, 0, DateTimeKind.Utc),
                             Title = "Cloud Computing Conference",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(369)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(6907)
                         },
                         new
                         {
                             Id = 5,
-                            AvailableTickets = 0,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(371),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(6924),
                             Description = "Learn about the latest trends in cybersecurity.",
                             EndDate = new DateTime(2026, 3, 15, 15, 0, 0, 0, DateTimeKind.Utc),
                             ImgPath = "assets/images/background/timer-bg.jpg",
@@ -370,7 +365,7 @@ namespace DataLayer.Migrations
                             Price = 40.0,
                             StartDate = new DateTime(2026, 3, 15, 10, 0, 0, 0, DateTimeKind.Utc),
                             Title = "Cybersecurity Seminar",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(372)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(6925)
                         });
                 });
 
@@ -413,72 +408,72 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(1233),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(7663),
                             Date = new DateTime(2024, 10, 15, 0, 0, 0, 0, DateTimeKind.Utc),
                             EventId = 1,
                             IsActive = true,
                             IsDeleted = false,
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(1234)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(7664)
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(1951),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(8256),
                             Date = new DateTime(2024, 10, 16, 0, 0, 0, 0, DateTimeKind.Utc),
                             EventId = 1,
                             IsActive = true,
                             IsDeleted = false,
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(1952)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(8256)
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(1955),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(8258),
                             Date = new DateTime(2025, 1, 20, 0, 0, 0, 0, DateTimeKind.Utc),
                             EventId = 2,
                             IsActive = true,
                             IsDeleted = false,
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(1956)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(8258)
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(1957),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(8260),
                             Date = new DateTime(2025, 6, 10, 0, 0, 0, 0, DateTimeKind.Utc),
                             EventId = 3,
                             IsActive = true,
                             IsDeleted = false,
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(1958)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(8260)
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(1959),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(8261),
                             Date = new DateTime(2025, 6, 11, 0, 0, 0, 0, DateTimeKind.Utc),
                             EventId = 3,
                             IsActive = true,
                             IsDeleted = false,
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(1959)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(8261)
                         },
                         new
                         {
                             Id = 6,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(1961),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(8326),
                             Date = new DateTime(2023, 11, 5, 0, 0, 0, 0, DateTimeKind.Utc),
                             EventId = 4,
                             IsActive = true,
                             IsDeleted = false,
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(1961)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(8327)
                         },
                         new
                         {
                             Id = 7,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(1962),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(8328),
                             Date = new DateTime(2026, 3, 15, 0, 0, 0, 0, DateTimeKind.Utc),
                             EventId = 5,
                             IsActive = true,
                             IsDeleted = false,
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(1963)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(8328)
                         });
                 });
 
@@ -530,134 +525,134 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(2731),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(8895),
                             EventAgendaId = 1,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 1,
                             StartTime = new TimeOnly(10, 0, 0),
                             Subject = "Introduction to Python Programming",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(2732)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(8896)
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(3829),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(9849),
                             EventAgendaId = 1,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 3,
                             StartTime = new TimeOnly(14, 0, 0),
                             Subject = "Python for Data Science",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(3829)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(9850)
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(3832),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(9852),
                             EventAgendaId = 2,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 1,
                             StartTime = new TimeOnly(11, 0, 0),
                             Subject = "Advanced Python Techniques",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(3833)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(9853)
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(3835),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(9853),
                             EventAgendaId = 3,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 2,
                             StartTime = new TimeOnly(14, 0, 0),
                             Subject = "Machine Learning Fundamentals",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(3835)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(9854)
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(3836),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(9855),
                             EventAgendaId = 3,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 4,
                             StartTime = new TimeOnly(16, 0, 0),
                             Subject = "AI in Cloud Computing",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(3836)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(9855)
                         },
                         new
                         {
                             Id = 6,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(3837),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(9856),
                             EventAgendaId = 4,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 1,
                             StartTime = new TimeOnly(9, 30, 0),
                             Subject = "Innovations in Software Development",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(3838)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(9856)
                         },
                         new
                         {
                             Id = 7,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(3839),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(9857),
                             EventAgendaId = 4,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 2,
                             StartTime = new TimeOnly(13, 0, 0),
                             Subject = "AI-Powered Innovations",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(3839)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(9857)
                         },
                         new
                         {
                             Id = 8,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(3840),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(9858),
                             EventAgendaId = 5,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 4,
                             StartTime = new TimeOnly(10, 0, 0),
                             Subject = "Cloud Solutions Showcase",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(3840)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(9858)
                         },
                         new
                         {
                             Id = 9,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(3842),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(9859),
                             EventAgendaId = 6,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 4,
                             StartTime = new TimeOnly(9, 0, 0),
                             Subject = "Scalable Cloud Architectures",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(3842)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(9860)
                         },
                         new
                         {
                             Id = 10,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(3843),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(9861),
                             EventAgendaId = 6,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 5,
                             StartTime = new TimeOnly(11, 30, 0),
                             Subject = "Securing Cloud Infrastructure",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(3843)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(9861)
                         },
                         new
                         {
                             Id = 11,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(3844),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(9862),
                             EventAgendaId = 7,
                             IsActive = true,
                             IsDeleted = false,
                             SpeakerId = 5,
                             StartTime = new TimeOnly(10, 0, 0),
                             Subject = "Ethical Hacking Techniques",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(3845)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(9862)
                         });
                 });
 
@@ -708,61 +703,61 @@ namespace DataLayer.Migrations
                         {
                             Id = 1,
                             Bio = "Software engineering expert with over 10 years of experience.",
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 522, DateTimeKind.Utc).AddTicks(5244),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(2506),
                             ImgPath = "assets/images/speakers/single-speaker.jpg",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Ahmed Khaled",
                             Specialization = "Software Development",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 522, DateTimeKind.Utc).AddTicks(5246)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(2507)
                         },
                         new
                         {
                             Id = 2,
                             Bio = "Data science enthusiast and AI researcher.",
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 522, DateTimeKind.Utc).AddTicks(6608),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(3609),
                             ImgPath = "assets/images/speakers/speaker-five.jpg",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Mohamed Ali",
                             Specialization = "Data Science",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 522, DateTimeKind.Utc).AddTicks(6608)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(3609)
                         },
                         new
                         {
                             Id = 3,
                             Bio = "Specialist in educational workshops with a focus on interactive learning.",
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 522, DateTimeKind.Utc).AddTicks(6612),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(3611),
                             ImgPath = "assets/images/speakers/speaker-full-five.jpg",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Omar Mostafa",
                             Specialization = "Education",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 522, DateTimeKind.Utc).AddTicks(6612)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(3613)
                         },
                         new
                         {
                             Id = 4,
                             Bio = "Expert in cloud computing and distributed systems.",
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 522, DateTimeKind.Utc).AddTicks(6614),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(3614),
                             ImgPath = "assets/images/speakers/speaker-full-one.jpg",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Hassan Ibrahim",
                             Specialization = "Cloud Computing",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 522, DateTimeKind.Utc).AddTicks(6614)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(3614)
                         },
                         new
                         {
                             Id = 5,
                             Bio = "Cybersecurity specialist with a focus on ethical hacking.",
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 522, DateTimeKind.Utc).AddTicks(6615),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(3615),
                             ImgPath = "assets/images/speakers/speaker-full-three.jpg",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Youssef Sami",
                             Specialization = "Cybersecurity",
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 522, DateTimeKind.Utc).AddTicks(6615)
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 530, DateTimeKind.Utc).AddTicks(3616)
                         });
                 });
 
@@ -809,67 +804,67 @@ namespace DataLayer.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(4529),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 531, DateTimeKind.Utc).AddTicks(447),
                             IsActive = true,
                             IsDeleted = false,
                             Platform = 2,
                             SpeakerId = 1,
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(4529),
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 531, DateTimeKind.Utc).AddTicks(447),
                             Url = "https://linkedin.com/in/ahmedkhaled"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(5470),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 531, DateTimeKind.Utc).AddTicks(1201),
                             IsActive = true,
                             IsDeleted = false,
                             Platform = 1,
                             SpeakerId = 1,
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(5470),
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 531, DateTimeKind.Utc).AddTicks(1201),
                             Url = "https://twitter.com/ahmedkhaled"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(5472),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 531, DateTimeKind.Utc).AddTicks(1203),
                             IsActive = true,
                             IsDeleted = false,
                             Platform = 1,
                             SpeakerId = 2,
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(5473),
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 531, DateTimeKind.Utc).AddTicks(1203),
                             Url = "https://twitter.com/mohamedali"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(5475),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 531, DateTimeKind.Utc).AddTicks(1205),
                             IsActive = true,
                             IsDeleted = false,
                             Platform = 3,
                             SpeakerId = 3,
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(5475),
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 531, DateTimeKind.Utc).AddTicks(1205),
                             Url = "https://instagram.com/omarmostafa"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(5477),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 531, DateTimeKind.Utc).AddTicks(1207),
                             IsActive = true,
                             IsDeleted = false,
                             Platform = 2,
                             SpeakerId = 4,
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(5477),
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 531, DateTimeKind.Utc).AddTicks(1207),
                             Url = "https://linkedin.com/in/hassanibrahim"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(5479),
+                            CreatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 531, DateTimeKind.Utc).AddTicks(1209),
                             IsActive = true,
                             IsDeleted = false,
                             Platform = 1,
                             SpeakerId = 5,
-                            UpdatedAt = new DateTime(2025, 7, 21, 7, 22, 51, 523, DateTimeKind.Utc).AddTicks(5480),
+                            UpdatedAt = new DateTime(2025, 7, 21, 6, 43, 29, 531, DateTimeKind.Utc).AddTicks(1209),
                             Url = "https://twitter.com/youssefsami"
                         });
                 });
@@ -939,13 +934,13 @@ namespace DataLayer.Migrations
                         },
                         new
                         {
-                            Id = "bda09337-3f18-48fd-b8f8-ce17023639ce",
+                            Id = "98d27459-4250-4135-aabe-fe376a319581",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "a12bf58c-2350-49d0-ae7d-73a278fbcb93",
+                            Id = "d9081a0c-c993-4ff4-a7f5-7841d4220307",
                             Name = "User",
                             NormalizedName = "USER"
                         });

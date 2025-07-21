@@ -20,6 +20,7 @@ namespace DataLayer.Models
         public DateTime StartDate { get; set; } = DateTime.UtcNow;
         public DateTime EndDate { get; set; } = DateTime.UtcNow.AddDays(1);
         public double Price { get; set; } = 0.0;
+        public int AvailableTickets { get; set; } = 0;
         public ICollection<EventAgenda> Agenda { get; set; } = new List<EventAgenda>();
     }
 }
