@@ -4,6 +4,7 @@ using DataLayer.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PresentationLayer.ViewModels;
 using System.Threading.Tasks;
 
@@ -21,9 +22,15 @@ namespace PresentationLayer.Areas.Customer.Controllers
             _userManager = userManager;
             _eventRepository = eventRepository;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) 
+            {
+                return NotFound();
+            }
+            var data = await _repository.GetAllAsync(x => x.UserId == user.Id, includeChain: x => x.Include(q => q.Event));
+            return View(data);
         }
 
         [HttpPost]
