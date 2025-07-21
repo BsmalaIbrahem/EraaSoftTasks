@@ -62,7 +62,6 @@ E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\Microsoft.Vi
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\Mono.TextTemplating.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\Newtonsoft.Json.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\NuGet.Common.dll
@@ -83,7 +82,6 @@ E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\System.Compo
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\System.Composition.TypedParts.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
-E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\System.Drawing.Common.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\System.Formats.Asn1.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\System.IO.Pipelines.dll
@@ -91,10 +89,8 @@ E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\System.Memor
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\System.Runtime.Caching.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\System.Security.Permissions.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\System.Text.Encodings.Web.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\System.Text.Json.dll
-E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\System.Windows.Extensions.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\af\Humanizer.resources.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\ar\Humanizer.resources.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\az\Humanizer.resources.dll
@@ -253,12 +249,8 @@ E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\runtimes\win
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
-E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\DataLayer.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\DataLayer.pdb
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\obj\Debug\net8.0\PresentationLayer.csproj.AssemblyReference.cache
@@ -289,3 +281,4 @@ E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\Microsoft.As
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+E:\C#\ErraSoft\Tasks\EduEventHub\PresentationLayer\bin\Debug\net8.0\Stripe.net.dll

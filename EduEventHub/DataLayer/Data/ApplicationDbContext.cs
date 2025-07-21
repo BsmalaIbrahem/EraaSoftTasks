@@ -30,6 +30,8 @@ namespace DataLayer.Data
         public DbSet<EventAgenda> EventAgendas { get; set; }
         public DbSet<Wishlist> Wishlists { get; set; }
         public DbSet<Cart> Carts { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<EventOrder> EventOrders { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

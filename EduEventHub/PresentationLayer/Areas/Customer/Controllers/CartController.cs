@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PresentationLayer.ViewModels;
+using Stripe.Checkout;
+using Stripe.Climate;
 using System.Threading.Tasks;
 
 namespace PresentationLayer.Areas.Customer.Controllers
@@ -17,11 +19,13 @@ namespace PresentationLayer.Areas.Customer.Controllers
         private readonly IRepository<Cart> _repository;
         private readonly IRepository<Event> _eventRepository;
         private readonly UserManager<ApplicationUser> _userManager;
-        public CartController(IRepository<Cart> repository, UserManager<ApplicationUser> userManager, IRepository<Event> eventRepository)
+        private readonly ApplicationDbContext _context;
+        public CartController(IRepository<Cart> repository, UserManager<ApplicationUser> userManager, IRepository<Event> eventRepository, ApplicationDbContext context)
         {
             _repository = repository;
             _userManager = userManager;
             _eventRepository = eventRepository;
+            _context = context;
         }
         public async Task<IActionResult> Index()
         {
@@ -148,6 +152,99 @@ namespace PresentationLayer.Areas.Customer.Controllers
             }
             
             return Json(new { success = true, message = "Event Count Decremented in cart." });
+        }
+
+        public async Task<IActionResult> Pay()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            var data = await _repository.GetAllAsync(x => x.UserId == user.Id, includeChain: x => x.Include(q => q.Event));
+            if (data == null || data.Count() == 0)
+            {
+                return NotFound();
+            }
+            var order = new DataLayer.Models.Order();
+
+            using (var transaction = await _context.Database.BeginTransactionAsync())
+            {
+                try
+                {
+                     order = new DataLayer.Models.Order
+                    {
+                        UserId = user.Id,
+                        TotalPrice = data.Sum(x => x.Event.Price * x.Count),
+                        Status = OrderStstus.Pending,
+                    };
+                    await _context.Orders.AddAsync(order);
+                    await _context.SaveChangesAsync();
+
+                    foreach (var item in data)
+                    {
+                        if(! await IsValidCount(item.Count, item.EventId))
+                        {
+                            throw new Exception($"Invalid count or not enough {item.Event.Title} tickets available.");
+                        }
+                        else
+                        {
+                            var EventOrder = new EventOrder
+                            {
+                                OrderId = order.Id,
+                                EventId = item.EventId,
+                                Count = item.Count,
+                                Price = item.Event.Price * item.Count
+                            };
+
+                            await _context.EventOrders.AddAsync(EventOrder);
+                            await _context.SaveChangesAsync();
+                        }
+                    }
+                    await transaction.CommitAsync();
+                }
+                catch(Exception ex)
+                {
+                    await transaction.RollbackAsync();
+                    TempData["Error"] = ex.Message;
+                    return RedirectToAction(nameof(Index));
+                }
+            }
+
+
+            var options = new SessionCreateOptions
+            {
+                PaymentMethodTypes = new List<string> { "card" },
+                LineItems = new List<SessionLineItemOptions>(),
+                Mode = "payment",
+                SuccessUrl = $"{Request.Scheme}://{Request.Host}/Customer/Checkout/Success?orderId={order.Id}",
+                CancelUrl = $"{Request.Scheme}://{Request.Host}/Customer/Checkout/Cancel",
+            };
+
+            foreach(var item in data)
+            {
+                options.LineItems.Add(new SessionLineItemOptions
+                {
+                    PriceData = new SessionLineItemPriceDataOptions
+                    {
+                        Currency = "egp",
+                        ProductData = new SessionLineItemPriceDataProductDataOptions
+                        {
+                            Name = item.Event.Title,
+                            Description = item.Event.Description,
+                        },
+                        UnitAmount = (long)item.Event.Price * 100,
+                    },
+                    Quantity = item.Count,
+                });
+            }
+
+            var service = new SessionService();
+            var session = service.Create(options);
+            order.SessionId = session.Id;
+            await _context.SaveChangesAsync();
+
+            return Redirect(session.Url);
         }
 
         private async Task<bool> IsValidCount(int count, int EventId)
