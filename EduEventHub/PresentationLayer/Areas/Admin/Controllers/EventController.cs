@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace PresentationLayer.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize]
+    [Authorize(Roles = ("SuperAdmin"))]
     public class EventController : Controller
     {
         private readonly IRepository<Event> _repository;

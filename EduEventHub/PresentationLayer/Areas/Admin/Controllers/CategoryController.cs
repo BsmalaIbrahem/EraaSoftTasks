@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace PresentationLayer.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize]
+    [Authorize(Roles = ("SuperAdmin"))]
     public class CategoryController : Controller
     {
         private readonly IRepository<Category> _repository;
