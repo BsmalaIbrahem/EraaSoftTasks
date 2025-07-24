@@ -218,7 +218,7 @@ namespace PresentationLayer.Areas.Customer.Controllers
                 LineItems = new List<SessionLineItemOptions>(),
                 Mode = "payment",
                 SuccessUrl = $"{Request.Scheme}://{Request.Host}/Customer/Checkout/Success?orderId={order.Id}",
-                CancelUrl = $"{Request.Scheme}://{Request.Host}/Customer/Checkout/Cancel",
+                CancelUrl = $"{Request.Scheme}://{Request.Host}/Customer/Checkout/Cancel?orderId={order.Id}",
             };
 
             foreach(var item in data)
@@ -227,7 +227,7 @@ namespace PresentationLayer.Areas.Customer.Controllers
                 {
                     PriceData = new SessionLineItemPriceDataOptions
                     {
-                        Currency = "egp",
+                        Currency = "usd",
                         ProductData = new SessionLineItemPriceDataProductDataOptions
                         {
                             Name = item.Event.Title,

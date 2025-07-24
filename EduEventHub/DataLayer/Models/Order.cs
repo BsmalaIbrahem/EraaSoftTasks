@@ -1,5 +1,6 @@
 ﻿using DataLayer.Data;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -18,6 +19,7 @@ namespace DataLayer.Models
         public string? SessionId { get; set; }
         public string? ReferenceId { get; set; }
         public OrderStstus Status { get; set; }
+        public ICollection<EventOrder> Events { get; set; } = new List<EventOrder>();
     }
 
     public enum OrderStstus
